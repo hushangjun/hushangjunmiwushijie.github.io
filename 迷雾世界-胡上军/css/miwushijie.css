@@ -1,0 +1,314 @@
+
+
+/*头部顶条部分*/
+
+.huTopbar{
+    width: 1349px;
+    height: 55px;
+    background-color: #fbfbfb;
+}
+.w{
+    height: 55px;
+    /*background-color: #ccc;*/
+    position: relative;
+    overflow: hidden;
+}
+.huWangyiLogo{
+    display:  block;
+    float: left;
+    width: 133px;
+    height: 44px;
+    margin-top: 5px;
+    background: url("../images/huWangyiLogo.png") ;
+}
+.huTopbar_mid{
+    width: 536px;
+    height: 52px;
+    line-height: 52px;
+    float: left;
+    margin-left:100px;
+}
+.huTopbar_mid a{
+    display: block;
+    text-align: center;
+    float: right;
+    width: 72px;
+    height: 52px;
+}
+/*充值游戏目录*/
+.huTopbar_menu{
+    float: right;
+    width: 123px;
+    height: 55px;
+    margin-right: 6px;
+}
+.huTopbar_menu span{
+    display: block;
+    width: 110px;
+    height: 52px;
+    text-align: center;
+    /*margin-top: 18px;*/
+    line-height: 52px;
+    padding-left: 13px;
+    color: #bc2e2e;
+}
+.huTopbar_menu span i{
+    display: block;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    float: right;
+    /*background-color: #fff;*/
+}
+/*隐藏的目录*/
+.allmenu{
+    position: absolute;
+    z-index: 100;
+    top: 55px;
+    width: 1000px;
+    background: #fdfefe;
+    border-top: 1px solid #ececec;
+    margin: 0;
+}
+.allmenu .menuTitle{
+    line-height: 39px;
+    color: #bc2e2e;
+    display: block;
+    width: 100%;
+    height: 39px;
+    font-size: 14px;
+    text-indent: 20px;
+    background: #f7f7f8;
+    overflow: hidden;
+    clear: both;
+}
+.menuTitle li{
+    float: left;
+    border-right: 1px solid #eee;
+    vertical-align: top;
+}
+.menuTitle_c1{
+    width: 247px;
+}
+.menuTitle_c2{
+    width: 603px;
+}
+.menuTitle_c3{
+    width: 147px;
+    float: right;
+}
+.huTopbar_right{
+    float: right;
+    width: 100px;
+    height: 55px;
+    text-align: center;
+    overflow: hidden;
+}
+#upDown{
+    position: absolute;
+    height: 300%;
+}
+.huTopbar_right a{
+    display: block;
+    height: 52px;
+    line-height: 52px;
+    font-size: 12px;
+}
+
+/*迷雾头部*/
+.huNavWarp{
+    width: 1349px;
+    height: 72px;
+    color: #fff;
+    font-size: 14px;
+    background-color: #ccc;
+    position: relative;
+
+}
+/*logo*/
+.huLogoName{
+    width: 249px;
+    height: 81px;
+    /*background-color: #666666;*/
+    margin-top: 22px;
+    margin-left: 37px;
+    float: left;
+}
+.huNavWarp .huMiyiLogo{
+    /*display: block;*/
+    float: left;
+    width: 77px;
+    height: 77px;
+    background: url(../images/huMiWuLogo.png) no-repeat;
+    background-size: 100% 100%;
+    text-indent: -5000px;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 2px solid #fff;
+
+}
+.huLogoName p{
+    float: left;
+
+    margin: 5px 0 0 17px;
+    line-height: 20px;
+}
+.huNavWarpTit{
+    float: left;
+    width: 708px;
+    height: 74px;
+    margin-left: 188px ;
+    height: 74px;
+}
+.huNavWarpTit li{
+    float: left;
+    width: 118px;
+    height: 73px;
+    line-height: 73px;
+    /*padding-right: 22px;*/
+
+}
+
+.huNavWarpTit .myiconfont{
+    display: block;
+    width: 12px;
+    height: 12px;
+    font-size: 12px;
+    margin-right: 8px;
+    float: left;
+}
+.huNavWarpTit li a{
+    display: block;
+    width: 80px;
+    height: 72px;
+
+    color: #fff;
+}
+.huNavWarpTit li a:hover{
+     color: #e8c67e;
+     border-bottom: 1px solid #e8c67e;
+ }
+.guanzghu{
+    float: right;
+    width: 126.017px;
+    height: 36px;
+    margin: 21px 30px 0 10px;
+}
+
+.guanzghu a{
+    /*display: block;*/
+    position: relative;
+    z-index: 3;
+    width: 32px;
+    height: 33px;
+    float: left;
+    margin-right: 9px;
+    background: url(../images/huMiwuHeader.png) 0 -254px;
+}
+
+.guanzghu p{
+    font-size: 12px;
+}
+.guanzghu .Huweixincode{
+    width: 151px;
+    height: 254px;
+    position: absolute;
+    top: -5px;
+    left: -47px;
+    display: none;
+    background: url("../images/huMiwuHeader.png") no-repeat 0px 0px;
+}
+.guanzghu .Huweixincode img{
+    width: 123px;
+    display: block;
+    margin: 56px auto 0;
+}
+.guanzghu .Huweixincode p{
+    padding-left: 15px;
+    color: #666;
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 8px;
+}
+/*下面的白线*/
+.huNavWarp .line{
+    width: 1789px;
+    height: 9px;
+    background: url(../images/huMiwuheaderLine.png) no-repeat;
+    position: absolute;
+    bottom: -4px;
+    left: 122px;
+    /*background-color: #55a532;*/
+}
+/*内容区域*/
+.main{
+    width: 1349px;
+    height: 300px;
+}
+/*尾部*/
+
+/*页尾footerbottom*/
+.HuFooter{
+    background-color: #020d2d;
+    opacity: .5;
+}
+.footerBottom{
+    text-align: center;
+    padding: 25px 0 40px 0;
+    font-family: simSun;
+    width: 1000px;
+    margin: 0 auto;
+    clear: both;
+}
+ .righttop a {
+    color: #e8c67e;
+}
+ .righttop span{
+    padding: 0 3px;
+    color: #e8c67e;
+}
+.bleft{
+    position: relative;
+    vertical-align: top;
+    top: 4px;
+    display: inline-block;
+    position: relative;
+}
+ .youxi{
+    width: 134px;
+    height: 31px;
+    padding-right: 15px;
+    display: inline-block;
+    cursor: pointer;
+    background: url(../images/nie.1.png) no-repeat;
+}
+ .netest{
+    width: 118px;
+    height: 31px;
+    padding-right: 0;
+    display:block;
+    float: left;
+    cursor: pointer;
+    background: url(../images/netease.1.png) no-repeat;
+}
+.br{
+    text-align: left;
+    display: inline-block;
+    padding-left: 6px;
+}
+.br p{
+    margin-bottom: 10px;
+}
+.br .Hujianhu{
+    width: 142px;
+    height: 26px;
+    line-height: 26px;
+    padding-left: 3px;
+    background-color: #610000;
+    color:#fff;
+}
+.br .Hujianhu .myiconfont{
+    /*display: inline-block;*/
+    line-height: 26px;
+    /*padding: 0 6px;*/
+}

@@ -1,0 +1,125 @@
+/**
+*赵天棋  2017-4-23
+*/
+/*用于占位置*/
+.box{
+    margin: 0 auto;
+    width:1453px;
+    height:100px;
+    overflow: hidden;
+    background-color: #007aff;
+}
+/*底部*/
+.fotter{
+    margin: 0 auto;
+    width:1348px;
+    height:190px;
+    overflow: hidden;
+    color: #ffffff;
+}
+.fotter a{
+    color: #ffffff;
+}
+
+.fotter .w{
+
+    height: 190px;
+    /*background-color: #f66960;*/
+}
+/*第一行的字体图标等*/
+.fotter .icon{
+    margin:0 auto;
+    width:624px;
+    height: 86px;
+}
+.fotter .icon ul{
+    width:500px;
+    height: 70px;
+}
+.fotter .icon li{
+    float:left;
+    position:relative;
+    margin: 8px;
+    height: 70px;
+    line-height:70px;
+    font-size:14px;
+}
+.fotter .icon li i{
+    font-size:20px;
+}
+.fotter .icon li span{
+    display:none;
+    position:absolute;
+    left:9px;
+    top:52px;
+    width:130px;
+    height:22px;
+    line-height:22px;
+    text-align: center;
+    color:#000;
+    border:2px solid #0086b3;
+    background-color: #fff;
+}
+.fotter .icon .mores .moresAll{
+        width:171px;
+        height:49px;
+}
+
+.fotter .icon .mores .moresAll a{
+    border: 1px solid #007aff;
+    color:#404040;
+    float:left;
+    width:83px;
+    height:23px;
+}
+.fotter .icon .mores .moresAll a i{
+    color:#007aff;
+}
+.navnice {
+    margin-left:140px;
+    color:#fff;
+}
+.navnice .nave-top{
+    height:31px;
+    width:300px;
+}
+.navnice .nave-top a{
+   float:left;
+    width:134px;
+    height:31px;
+}
+.navnice .nave-top .wangyi{
+    width:115px;
+    background: url(../images/fotter1.png) no-repeat;
+}
+.navnice .nave-top .borde{
+    width:2px;
+    background-color: #F10215;
+    margin: 0   12px;
+}
+.navnice .nave-top .game{
+    background: url(../images/fotter.png) no-repeat ;
+}
+.navnice .nav-center,.navnice .nav-bottom {
+    height:22px;
+    line-height:22px;
+    font-size:12px;
+}
+.navnice .nav-center a{
+    color:#d0aa5c;
+}
+.navnice .nav-center span{
+    margin: 0 6px;
+}
+.navnice .nav-bottom span{
+    float:left;
+}
+.navnice .nav-bottom a {
+    float:left;
+    margin-left:300px;
+    width:150px;
+    height:22px;
+    text-align: center;
+    color:#fff;
+    background-color: #610000;
+}

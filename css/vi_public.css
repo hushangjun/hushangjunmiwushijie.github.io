@@ -1,0 +1,48 @@
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+form,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+
+}
+
+input {
+    border: 0 none;
+    vertical-align: middle;
+}
+
+body {
+    font: 12px/150% "microsoft yahei";
+}
+
+/*公用样式*/
+.w {
+    width: 1274px;
+    margin: 0 auto;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}

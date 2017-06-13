@@ -1,0 +1,493 @@
+.vi-top {
+    width: 100%;
+    height: 50px;
+}
+
+body {
+    height: 3500px;
+}
+
+.vi-main {
+    background: #152f52 url(../images/contain-bg_1c0ccf5.jpg) no-repeat center top;
+    background-size: cover;
+}
+
+/*主要导航栏*/
+.vi-main .side-nav {
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    margin: -44px -820px 0 0;
+    padding-top: 30px;
+    background: url(../images/sib-nav_c4b4c50.png) no-repeat;
+    width: 177px;
+    height: 409px;
+    z-index: 10;
+}
+
+.vi-main .side-nav li {
+    font-size: 18px;
+    height: 52px;
+    line-height: 52px;
+    text-align: center;
+}
+
+.side-nav .current a {
+    color: #f19d25;
+}
+
+/*一、初入世界部分*/
+.vi-part1 {
+    height: 775px;
+    position: relative;
+    background: url(../images/header-bg_8840969.jpg) no-repeat center top;
+
+}
+
+/*初入世界标题*/
+/*知识点：子绝父相，绝对定位居中*/
+.vi-part1 .p1-title {
+    position: absolute;
+    bottom: 141px;
+    left: 50%;
+    margin-left: -365px;
+    width: 730px;
+    height: 81px;
+    background: url(../images/section1-title_fff3691.png) no-repeat center top;
+}
+
+/*初入世界的具体说明*/
+.vi-part1 .p1-list {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -637px;
+    width: 1274px;
+    height: 111px;
+    background: url(../images/section1-bg_5e82bae.png) no-repeat center top;
+}
+
+/*知识点：元素水平垂直居中*/
+.p1-list li {
+    float: left;
+    width: 130px;
+    height: 111px;
+    line-height: 111px;
+    text-align: center;
+    margin-left: 75px;
+
+}
+
+.p1-list li:hover a {
+    color: #19253b;
+}
+
+.p1-list a {
+    position: relative;
+    top: 5px;
+    font-size: 18px;
+    color: #456db4;
+}
+
+/*给每个i标签设置定位*/
+.p1-list i {
+    width: 27px;
+    height: 26px;
+    position: absolute;
+    left: -30px;
+    top: 2px;
+}
+
+/*知识点：精灵图*/
+.p1-list .i1 {
+    background: url(../images/index_z_18d9edb.png) no-repeat;
+    background-position: -180px -256px;
+}
+
+.p1-list li:hover .i1 {
+    background-position: -302px -53px;
+}
+
+.p1-list .i2 {
+    background: url(../images/index_z_18d9edb.png) no-repeat;
+    background-position: -210px -256px;
+}
+
+.p1-list li:hover .i2 {
+    background-position: -304px -79px;
+}
+
+.p1-list .i3 {
+    background: url(../images/index_z_18d9edb.png) no-repeat;
+    background-position: -129px -256px;
+}
+
+.p1-list li:hover .i3 {
+    background-position: -302px -105px;
+}
+
+.p1-list .i4 {
+    background: url(../images/index_z_18d9edb.png) no-repeat;
+    background-position: -264px -256px;
+}
+
+.p1-list li:hover .i4 {
+    background-position: -304px -130px;
+}
+
+.p1-list .i5 {
+    background: url(../images/index_z_18d9edb.png) no-repeat;
+    background-position: -302px 0px;
+}
+
+.p1-list li:hover .i5 {
+    background-position: -236px -254px;
+}
+
+.p1-list .i6 {
+    background: url(../images/index_z_18d9edb.png) no-repeat;
+    background-position: -302px -27px;
+}
+
+.p1-list li:hover .i6 {
+    background-position: -154px -254px;
+}
+
+/*二、地球探险部分*/
+.vi-part2 {
+    height: 1140px;
+    margin-top: 80px;
+}
+
+/*地球探险标题*/
+.vi-part2 .p2-title {
+    margin: 0 auto;
+    width: 730px;
+    height: 80px;
+    background: url(../images/section2-title_8371345.png) no-repeat center top;
+    margin-bottom: 25px;
+}
+
+/*“地球探险”的详细介绍*/
+.vi-part2 .introduce-con {
+    font-size: 18px;
+    color: #4e75bd;
+}
+
+/*“地球探险”的li包含六个章节*/
+.vi-part2 .introduce-con li {
+    display: none;
+}
+
+.vi-part2 .introduce-con li:first-child {
+    display: block;
+}
+
+/*“地球探险”的每个章节的介绍*/
+.vi-part2 .introduce-con .introduce {
+    text-align: center;
+}
+
+/*介绍的标题*/
+.introduce .introduce-tit {
+    font-weight: normal;
+    font-size: 24px;
+    color: #fd9501;
+    margin-bottom: 28px;
+}
+
+/*介绍的详细信息*/
+.introduce .introduce-info {
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+/*“地球探险”的大图展示*/
+.vi-part2 .imgs-con {
+    /*position: relative;*/
+    background: url(../images/section2-bg_d801ae6.png) no-repeat center top;
+    height: 717px;
+    padding-top: 60px;
+    padding-left: 37px;
+}
+
+.vi-part2 .imgs-con .imgs-box {
+    width: 1200px;
+    height: 666px;
+    overflow: hidden;
+}
+
+/*“地球探险”的每一张大图用li包裹，li里面的div样式*/
+.vi-part2 .imgs-box div {
+    position: relative;
+    width: 1200px;
+    height: 666px;
+}
+
+/*“地球探险”的六张大图*/
+.vi-part2 .imgs1 {
+    background: url(../images/dttx01_2970bfe.png) no-repeat center top;
+
+}
+
+.vi-part2 .imgs2 {
+    background: url(../images/dttx02_e401f30.png) no-repeat center top;
+
+}
+
+.vi-part2 .imgs3 {
+    background: url(../images/dttx03_f6438dd.png) no-repeat center top;
+
+}
+
+.vi-part2 .imgs4 {
+    background: url(../images/dttx04-1_fadc2e2.png) no-repeat center top;
+
+}
+
+.vi-part2 .imgs5 {
+    background: url(../images/dttx04-2_aedca87.png) no-repeat center top;
+
+}
+
+.vi-part2 .imgs6 {
+    background: url(../images/dttx05_5fdad51.png) no-repeat center top;
+
+}
+
+.imgs-con ul {
+    width: 700%;
+    position: relative;
+    left: 0;
+}
+
+.imgs-con ul li {
+    float: left;
+}
+
+.imgs-con a {
+    position: absolute;
+    background: url(../images/glass2_8d5a5e5.png);
+    width: 76px;
+    height: 76px;
+}
+
+.imgs-con a i {
+    position: absolute;
+    background: url(../images/glass1_ed944e9.png);
+    width: 76px;
+    height: 76px;
+
+}
+
+/*放大镜旋转动画效果*/
+.imgs-con a i {
+    -webkit-transition: all ease .4s;
+    -moz-transition: all ease .4s;
+    -ms-transition: all ease .4s;
+    transition: all ease .4s;
+}
+
+.imgs-con a i:hover {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.imgs-con .imgs1-1, .imgs-con .imgs2-1,.imgs3-1,.imgs4-1,.imgs5-1,.imgs6-1 {
+    left: 158px;
+    top: 106px;
+}
+
+.imgs-con .imgs1-2, .imgs-con .imgs2-2,.imgs3-2,.imgs4-2,.imgs5-2,.imgs6-2 {
+    left: 587px;
+    top: 162px;
+}
+
+.imgs-con .imgs1-3,.imgs2-3,.imgs3-3,.imgs4-3,.imgs5-3,.imgs6-3 {
+    left: 920px;
+    top: 167px;
+}
+
+.imgs-con .imgs1-4,.imgs2-4,.imgs3-4,.imgs4-4,.imgs5-5,.imgs6-4 {
+    left: 500px;
+    top: 410px;
+}
+
+/*“地球探险”选择项*/
+.vi-part2 .option-con {
+    position: relative;
+    margin-top: 28px;
+}
+
+.option-con ul {
+    padding-left: 133px;
+    overflow: hidden;
+}
+
+.option-con li {
+    float: left;
+    margin: 0 6px;
+    position: relative;
+    overflow: hidden;
+}
+
+/*“地球探险”选择项小图*/
+.option-con li span {
+    position: absolute;
+    left: 0;
+    top: -86px;
+    font-size: 20px;
+    color: #fd9501;
+    background: #000;
+    background: rgba(0, 0, 0, .8);
+    width: 156px;
+    height: 86px;
+    line-height: 86px;
+    text-align: center;
+}
+
+.option-con li:hover span {
+    top: 0;
+    -webkit-transition: top ease .3s;
+    -moz-transition: top ease .3s;
+    -ms-transition: top ease .3s;
+    transition: top ease .3s
+}
+
+/*“地球探险”选择项左右按钮*/
+.option-con .btn-left {
+    position: absolute;
+    background: url(../images/btn-left_0c77740.png) no-repeat;
+    left: 50px;
+    top: 10px;
+    width: 66px;
+    height: 66px;
+}
+
+.option-con .btn-left:hover {
+    background-position: -65px 0;
+    -webkit-transition: background-position ease .3s;
+    -moz-transition: background-position ease .3s;
+    -ms-transition: background-position ease .3s;
+    transition: background-position ease .3s;
+}
+
+.option-con .btn-right {
+    position: absolute;
+    background: url(../images/btn-right_47924df.png) no-repeat -66px 0px;
+    right: 50px;
+    top: 10px;
+    width: 66px;
+    height: 66px;
+}
+
+.option-con .btn-right:hover {
+    background-position: 0 0;
+    -webkit-transition: background-position ease .3s;
+    -moz-transition: background-position ease .3s;
+    -ms-transition: background-position ease .3s;
+    transition: background-position ease .3s;
+}
+
+/*“特色玩法”标题*/
+.vi-part3 {
+    /*height: 1140px;*/
+    margin-top: 80px;
+}
+
+.vi-part3 .p3-title {
+    margin: 0 auto 25px;
+    width: 730px;
+    height: 80px;
+    background: url(../images/section3-title_9470e42.png) no-repeat center top;
+}
+
+.vi-part3 .play-box {
+    position: relative;
+    background: url(../images/section3-bg_68e42dd.png) no-repeat center top;
+    height: 601px;
+    padding-top: 60px;
+    padding-left: 37px;
+}
+
+/*英雄动画效果*/
+.play-box .hero {
+    position: absolute;
+    bottom: -300px;
+    right: -44px;
+    width: 437px;
+    height: 523px;
+    background: url(../images/section3-per_5fcac1d.png) no-repeat;
+    animation: move 1.5s infinite;
+    z-index: 5;
+}
+
+@keyframes move {
+    0% {
+        top: 400px;
+    }
+
+    50% {
+        top: 500px;
+    }
+
+    100% {
+        top: 400px;
+    }
+}
+
+.vi-part3 .play-box li, .vi-part4 .system-box li {
+    float: left;
+    width: 264px;
+    height: 120px;
+    margin: 0 45px 15px 0;
+
+    background: url(../images/skill-bg_101376d.png) no-repeat center top;
+    /*淡入效果*/
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    transition: all ease .3s;
+}
+
+/*鼠标经过特色玩法、游戏系统图片的效果*/
+.vi-part3 .play-box li:hover, .vi-part4 .system-box li:hover {
+    background: url(../images/skill-bg-h_d194fb7.png) no-repeat center top;
+}
+
+.play-box li img, .system-box li img {
+    float: left;
+    margin: 6px 0 0 5px;
+}
+
+.play-box li span, .system-box li span {
+    float: left;
+    width: 150px;
+    line-height: 126px;
+    text-align: center;
+    font-size: 18px;
+    color: #fd9501;
+}
+
+/*游戏系统标题*/
+.vi-part4 {
+    margin-top: 80px;
+}
+
+.vi-part4 .p4-title {
+    margin: 0 auto 25px;
+    width: 730px;
+    height: 80px;
+    background: url(../images/section4-title_ff50997.png) no-repeat center top;
+    /*margin-bottom: 25px;*/
+}
+
+.vi-part4 .system-box {
+    position: relative;
+    background: url(../images/section4-bg_060f946.png) no-repeat center top;
+    height: 430px;
+    padding-top: 60px;
+    padding-left: 37px;
+}

@@ -1,0 +1,762 @@
+/**
+*进入官网页样式
+*author:赵天棋
+*创建于月19号
+*/
+/*固定在右边的锚*/
+.navLeft {
+    position:fixed;
+    top:50%;
+    right:20px;
+    margin-top:-230px;
+    width:75px;
+    height:459px;
+}
+.navLeft .bord{
+    display:block;
+    margin-top:25px;
+    margin-left:38px;
+    width:6px;
+    height:369px;
+    background-color: #000000;
+}
+.navLeft #left1{
+    margin-top:0;
+}
+.navLeft a {
+    float:left;
+    margin-top:34px;
+    padding:4px;
+    /*background: url(../images/left_hover.png) no-repeat;*/
+    /*background-size:84px 95px;*/
+}
+.navLeft a i {
+   float:left;
+    width:75px;
+    height:87px;
+
+}
+.navLeft a .navLeft1{
+    background: url(../images/left1.png) no-repeat;
+
+}
+.navLeft a .navLeft2{
+    background: url(../images/leftnav2_5283d8d.png) no-repeat;
+}
+.navLeft a .navLeft3{
+    background: url(../images/leftnav3_9a107ca.png) no-repeat;
+}
+.navLeft a .navLeft4{
+    background: url(../images/leftnav4.png) no-repeat;
+}
+.part1,
+.part2,
+.part3,
+.part4{
+    margin: 0 auto;
+    width:1453px;
+    height:910px;
+    overflow: hidden;
+}
+/*第一部分*/
+
+.part1{
+    background-color: #0e2a5e;
+    background: url(../images/tobar.jpg) no-repeat;
+}
+/*第一部分上半心*/
+.part1Top {
+    height:89px;
+    background-color: #0e2a51;
+    border-bottom: 3px solid #675c2f;
+}
+.part1Top .w{
+  height:89px;
+}
+/*第一部分左边的logo和文字*/
+.part1Top .tobar{
+    float:left;
+    height:89px;
+}
+.part1Top .tobar .logoImg {
+    top:30px;
+    width:71px;
+    height:71px;
+}
+.part1Top .tobar .logoImg a {
+    display:block;
+    width:71px;
+    height:71px;
+    background:url(../images/mwsjicon.gif) no-repeat;
+}
+/*让h1文字不显示*/
+.part1Top .tobar .logoImg h1{
+    text-indent: -999px;
+}
+/*logo的文字部分*/
+.part1Top .tobar .word{
+    float:left;
+    margin-left:88px;
+    margin-top:34px;
+}
+.part1Top .tobar .word a{
+    color:#fff;
+}
+ .tobar .word .wordMwsj{
+     font-size: 18px;
+     font-weight: 700;
+     line-height: 25px;
+ }
+.tobar .word .wordMessage{
+    font-size:16px;
+}
+/*第一部分右边的链接"进入官网"*/
+.part1Top .go{
+    float:right;
+    height:89px;
+    margin:33px;
+}
+.part1Top .go h2{
+    text-indent: -9999px;
+}
+.part1Top .go a {
+    display:block;
+    width:130px;
+    height:26px;
+    background:url(../images/part1Go.png) no-repeat;
+}
+
+/*第一部分的下半部分*/
+.part1Bottom .w{
+    position:relative;
+   height:818px;
+}
+
+.part1Bottom .slogn{
+    position:absolute;
+    top:53px;
+    left:0;
+    width:572px;
+    height:376px;
+    background: url(../images/slogan.png) no-repeat;
+}
+/*下载区*/
+.part1Bottom .downLoad{
+    position:absolute;
+    top:448px;
+    left:0;
+    width:483px;
+    height:179px;
+    background: url(../images/downLoad.png) no-repeat;
+    color: #fff;
+}
+
+.part1Bottom .downLoad .weixinQrc{
+    float:left;
+    padding: 14px 0 3px  28px;
+    font-size: 12px;
+    line-height: 18px;
+}
+.part1Bottom .downLoad .weixinQrc p{
+    padding-left:20px;
+    background: url(../images/weixin.png) no-repeat;
+
+}
+
+.part1Bottom .downLoad .weixinQrc img{
+    width:118px;
+    height: 118px;
+    background-color: #007aff;
+}
+.part1Bottom .downLoad .weixinQrc .shao{
+    position:absolute;
+    top:31px;
+    width:118px;
+    height: 4px;
+    background:rgba(255,0,227,.6);
+}
+.part1Bottom .downLoad  .downLoadCenter {
+    float:left;
+    padding:35px  0 0 10px;
+}
+.part1Bottom .downLoad  .downLoadCenter a {
+    display:block;
+    color:#fff;
+}
+.downLoad  .downLoadCenter .ios a{
+    margin-bottom:9px;
+    width: 171px;
+    height: 51px;
+    background:url(../images/ios.png) no-repeat;
+}
+
+.downLoad  .downLoadCenter .android a{
+    font-size:18px;
+    font-weight:500;
+    line-height: 58px;
+    text-align: center;
+    width: 176px;
+    height:58px;
+    background: url(../images/index1.png) no-repeat -217px -164px;
+    /*3px -221px;*/
+}
+/*右侧的公厕大礼包*/
+.downLoad .downLoadRight {
+    float:left;
+    position:relative;
+    margin:35px 0 0 30px;
+}
+.downLoad .downLoadRight a {
+    display:block;
+    color:#fff;
+    font-size:18px;
+    line-height: 18px;
+    font-weight:700;
+}
+.downLoad .downLoadRight span {
+    display:block;
+}
+.downLoad .downLoadRight .img{
+    background-color: #007aff;
+    width:77px;
+    height:78px;
+    background: url(../images/downLoadRight.png) no-repeat;
+    margin-bottom:10px;
+}
+
+.part1Bottom .play{
+   position:absolute;
+    top:505px;
+    left: 540px;
+    width: 85px;
+    height:85px;
+    /*background-color: #007aff;*/
+}
+.part1Bottom .play i{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 85px;
+    height:85px;
+    z-index: 4;
+    background: url(../images/index1.png) no-repeat 0 1px;
+
+}
+.part1Bottom .play em{
+    position:absolute;
+    top:20px;
+    left:16px;
+    width: 50px;
+    height:50px;
+    border-radius:50%;
+    z-index: 6;
+    background: url(../images/index1.png) no-repeat -389px -166px;
+}
+
+/*那个被隐藏的盒子*/
+.part1Bottom .hid{
+    display:none;
+    position:fixed;
+    left:50%;
+    top: 50%;
+    margin-left:-295px;
+    margin-top:-238px;
+    padding:125px 60px 30px 60px;
+    z-index: 100;
+    width:469px;
+    height:385px;
+    background: url(../images/hid.png) no-repeat;
+}
+/*关闭小按钮*/
+.part1Bottom .hid .close{
+    position:absolute;
+    right:-100px;
+    top:70px;
+    width:80px;
+    height:80px;
+    background: url(../images/close.jpg) no-repeat;
+    cursor: pointer;
+
+}
+.part1Bottom .hid .hidTop{
+    width: 469px;
+    height: 58px;
+}
+
+.part1Bottom .hid .hidTop span{
+    float:left;
+    width: 216px;
+    height:58px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 27px;
+    cursor:pointer;
+}
+.part1Bottom .hid .hidTop .newMan {
+    background: url(../images/index1.png) no-repeat 0 -166px;
+}
+.part1Bottom .hid .hidTop .grow {
+    background: url(../images/index1.png) no-repeat -176px -224px;
+}
+
+.part1Bottom .hid .hidTop a{
+    width: 126px;
+    height:58px;
+    color:#fff;
+}
+/*中间的变换的内容*/
+.hid .seris  .nTop{
+    font-size: 16px;
+    line-height:22px;
+    color:#6c6c6c;
+}
+.hid .seris  .nCenter{
+    width:460px;
+    height:58px;
+    background-color: #fff;
+    border:  3px solid  #726c5e;
+    line-height: 58px;
+    text-align: center;
+    color:#6c6c6c;
+    font-size:20px;
+
+}
+.hid .seris  .nBottom{
+    margin:10px;
+}
+.hid .seris  .nBottom .loookOut{
+    width:97px;
+    height:22px;
+    background:url(../images/gift_dt_bg_59c0785.jpg) no-repeat;
+    text-align: center;
+    line-height: 22px;
+    color:#fff;
+}
+.hid .seris  .nBottom p{
+    height: 24px;
+    line-height: 24px;
+    font-size: 13px;
+    color:#bf1a32;
+}
+.part1Bottom .hid .newS{
+    display:block;
+}
+.part1Bottom .hid .growS{
+    display:none;
+}
+/*动画*/
+ .mytherd{
+     -webkit-animation:bounce 2s infinite;
+ }
+/*第二部分*/
+.part2 {
+    background: url(../images/part2_bg.jpg) no-repeat;
+}
+
+/*版心*/
+.part2  .w{
+    position:relative;
+    height:910px;
+}
+.part2 h2 {
+    position:absolute;
+    top:70px;
+    left:50%;
+    margin-left:-253px;
+    width:506px;
+    height:72px;
+    background: url(../images/part2-1.png) no-repeat;
+}
+.part2 ul {
+    position:absolute;
+    top:190px;
+    left:0;
+}
+.part2 ul li {
+    float:left;
+    margin-right:50px;
+    width: 260px;
+    height: 333px;
+}
+/*最右边的两个外边距为0*/
+.part2 ul .lis4,
+.part2 ul .lis8{
+    margin-right:0;
+}
+.part2 ul li a,
+.part2 ul li img {
+    display:block;
+    width: 260px;
+    height: 333px;
+}
+
+/*创建翻牌的效果动画*/
+@-webkit-keyframes flipoutY1{
+    0%{-webkit-transform:perspective(400px) rotateY(0deg);}
+    100%{-webkit-transform:perspective(400px) rotateY(89deg);}
+}
+@-webkit-keyframes flipoutY2{
+    0%{-webkit-transform:perspective(400px) rotateY(91deg);}
+    100%{-webkit-transform:perspective(400px) rotateY(180deg);}
+}
+@-webkit-keyframes flipoutY3{
+    0%{-webkit-transform:perspective(400px) rotateY(180deg);}
+    100%{-webkit-transform:perspective(400px) rotateY(90deg);}
+}
+@-webkit-keyframes flipoutY4{
+    0%{-webkit-transform:perspective(400px) rotateY(90deg);}
+    100%{-webkit-transform:perspective(400px) rotateY(0deg);}
+}
+.part2 ul li .flipout1{
+    -webkit-animation: flipoutY1 0.4s ;
+}
+.part2 ul li .flipout2{
+    -webkit-animation: flipoutY2 1s ;
+}
+.part2 ul li .flipout3{
+    -webkit-animation: flipoutY3 0.4s ;
+}
+.part2 ul li .flipout4{
+    -webkit-animation: flipoutY4 1s ;
+}
+.part2 ul li img{
+    display:none;
+    /*让这个图本身就是反过来的,那么他的父盒子反转180 之后就是正面的*/
+    transform: rotateY(180deg) ;
+}
+
+/*第三部分*/
+.part3{
+    width: 1348px;
+    background: url(../images/part3_bg.jpg) no-repeat;
+}
+.part3 .w {
+    position:relative;
+    height:910px;
+}
+.part3 h2{
+    position:absolute;
+    top:135px;
+    left:0;
+    width: 358px;
+    height:72px;
+    background: url(../images/part3-title.png) no-repeat;
+}
+.part3 .mine{
+    position:absolute;
+    left:100px;
+    top:180px;
+}
+/*动画*/
+
+.part3 .mine .bigImg1,
+.part3 .mine .bigImg2,
+.part3 .mine .bigImg3,
+.part3 .mine .bigImg4,
+.part3 .mine .bigImg5 {
+    position:absolute;
+    left:0;
+    width: 997px;
+    height: 580px;
+    display:none;
+}
+.part3 .mine .bigImg1{
+    display:block;
+}
+/*左边的人物信息*/
+@keyframes runLeft {
+    from {top:0;left: -40px;opacity:0;}
+    to {top:100px;left: 200px;opacity:1;}
+}
+.part3 .mine  .b-left{
+    position:absolute;
+    top:125px;
+    left:0;
+    width:320px;
+    height:539px;
+    -webkit-animation:  runLeft 1s;
+}
+.part3   .b-left .disn {
+    height:50px;
+    font-size:34px;
+    font-weight:600;
+    color:#d0aa5c;
+}
+.part3   .b-left .disn i{
+    float:left;
+    width:47px;
+    height:50px;
+    background: url(../images/index1.png) no-repeat -418px -83px;
+}
+.part3   .b-left .disn span{
+    float: left;
+    padding: 10px 10px;
+}
+.part3   .b-left .mold{
+    margin-top: 18px;
+    width:256px;
+    height:28px;
+    font-size:17px;
+    line-height: 28px;
+    text-align: center;
+    color:#cee0ff;
+}
+
+
+.part3   .b-left .mold .mLeft{
+    float:left;
+    width:123px;
+    background-color: #0a4790;
+}
+.part3   .b-left .mold .mRight{
+    float:left;
+    width:123px;
+    margin-left:8px;
+    background-color: #0a4790;
+}
+.part3   .b-left .theName{
+    margin-top:24px;
+    line-height:60px;
+    font-size:60px;
+    font-weight:800;
+    color:#d0aa5c;
+}
+.part3   .b-left .solder{
+    width:256px;
+    height:28px;
+    background-color: #0a4790;
+    margin-top:8px;
+    font-size:17px;
+    line-height: 28px;
+    text-align: center;
+    color:#cee0ff;
+}
+.part3   .b-left .manBg{
+    height:52px;
+    font-size: 18px;
+    font-weight:600;
+    line-height: 52px;
+    color:#0a4790;
+}
+@keyframes runUp {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+.part3   .b-left .mess{
+    line-heihgt:24px;
+    font-size:15px;
+    color:#0a4790;
+    -webkit-animation:  runUp 1s;
+}
+/*动画*/
+@keyframes runRight {
+    0% {top: 0px;opacity:0;}
+    50% {left:500px;top: 0px;opacity:0.5;}
+    100% {top: 90px;opacity:1;}
+}
+@keyframes runUp {
+    0% {top: 800px;opacity:0;}
+    100% {top: 60px;opacity:1;}
+}
+.part3 .mine  .b-right{
+    position:absolute;
+    left:380px;
+    width:590px;
+    height:539px;
+    -webkit-animation:  runRight 1s;
+}
+.part3 .mine .bigImg2 .b-right{
+    top:-65px;
+}
+.part3 .mine .bigImg3 .b-right{
+    top:-143px;
+}
+.part3 .mine .bigImg4 .b-right{
+    top:-68px;
+    left:517px;
+}
+.part3 .mine .bigImg5 .b-right{
+    top:-90px;
+    left:550px;
+}
+
+
+/*箭头*/
+.part3 .mine .arrow{
+    position:absolute;
+    top:282px;
+    left:-84px;
+    width: 150%;
+    height: 36px;
+}
+.part3 .mine .arrow .arrow-left,
+.part3 .mine .arrow .arrow-right{
+    width: 42px;
+    height: 36px;
+    cursor: pointer;
+
+}
+.part3 .mine .arrow .arrow-left{
+    float:left;
+    background: url(../images/part3-left.png) no-repeat;
+}
+.part3 .mine .arrow .arrow-right{
+   float:right;
+    background: url(../images/part3-right.png) no-repeat;
+}
+.part3 .mine .smallImg{
+    position:relative;
+    top:520px;
+    padding-top:30px;
+    width:800px;
+    height: 144px;
+}
+.part3 .mine .smallImg li {
+    float:left;
+    position:relative;
+    margin-right: 10px;
+    width: 126px;
+    height: 166px;
+}
+
+.part3 .mine .smallImg   i{
+    position:absolute;
+    top:0;
+    left:0;
+   display:block;
+    width: 114px;
+    height: 114px;
+    background-color: #007aff;
+    cursor:pointer;
+    
+}
+.part3 .mine .smallImg .sm1 i{
+    background: url(../images/part3-s1.jpg) no-repeat;
+}
+.part3 .mine .smallImg .sm2 i{
+    background: url(../images/part3-s2.jpg) no-repeat;
+}
+.part3 .mine .smallImg .sm3 i{
+    background: url(../images/part3-s3.jpg) no-repeat;
+}
+.part3 .mine .smallImg .sm4 i{
+    background: url(../images/part3-s4.jpg) no-repeat;
+}
+.part3 .mine .smallImg .sm5 i{
+    background: url(../images/part3-s5.jpg) no-repeat;
+}
+.part3 .mine .smallImg  .current{
+    color:#754e00;
+}
+
+
+.part3 .mine .smallImg span{
+   position:absolute;
+    top: 120px;
+    left:0;
+   margin-top:10px;
+    width: 126px;
+    height:20px;
+    font-size:16px;
+    line-height:20px;
+    text-align:center;
+    color:#071a47;
+    cursor:pointer;
+}
+
+.part3 .mine .smallImg .more{
+    float:left;
+    border:1px solid #007aff;
+}
+.part3 .mine .smallImg .more a{
+    float:left;
+    width: 114px;
+    height: 114px;
+    background:url(../images/part3-more.jpg) no-repeat;
+}
+
+
+/*第四部分*/
+.part4{
+    background: url(../images/part4_bg.jpg) no-repeat;
+}
+.part4 .w {
+    height:910px;
+}
+.part4 h2{
+    margin: 135px auto 50px;
+    width: 367px;
+    height: 72px;
+    background: url(../images/part4-title.png) no-repeat;
+}
+
+/*轮播图部分*/
+.part4 .spider {
+    position:relative;
+    width:1190px;
+    height:800px;
+}
+.part4 .spider ul{
+    margin-left:145px;
+    width: 900px;
+    height: 591px;
+    overflow: hidden;
+   }
+.part4 .spider ul li{
+    /*position:absolute;*/
+    /*left:0;*/
+    /*top:0;*/
+}
+/*箭头*/
+.part4 .spider .arrow{
+    position:absolute;
+    top:300px;
+    z-index: 10;
+    width:1190px;
+    height:50px;
+}
+.part4 .spider .arrow .arrow-left{
+    float:left;
+    background: url(../images/part4-arrow-left.png) no-repeat;
+}
+.part4 .spider .arrow .arrow-right{
+    float:right;
+    background: url(../images/part4-arrow-right.png) no-repeat;
+}
+
+.part4 .spider .arrow i{
+    width: 92px;
+    height:93px;
+    cursor: pointer;
+}
+
+/*小圆点*/
+.part4 .spider .cancle{
+    margin: 0 auto;
+    width:280px;
+    padding: 15px 0px ;
+}
+
+.part4 .spider .cancle i{
+    float:left;
+    margin-left: 13px;
+    width: 31px;
+    height:32px;
+    border-radius: 50%;
+    background: url(../images/p4-cancle.png) no-repeat;
+    cursor: pointer;
+}
+.part4 .spider .cancle .current{
+    background: url(../images/p4-cancle0.png) no-repeat;
+}
+/*使用css3添加到part4的轮播图*/
+/*首先创建动画*/
+@-webkit-keyframes myfirst   {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+/*捆绑到一个类选择器 规定时间*/
+.myClass{
+    -webkit-animation: myfirst 2s ;
+}

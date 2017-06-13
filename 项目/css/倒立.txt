@@ -1,0 +1,13 @@
+width: 249px;
+height: 253px;
+float: left;
+cursor: pointer;
+position: absolute;
+z-index: 2;
+background: url(https://mwsj.res.netease.com/pc/zt/20170113153016/img/fx_fa02bf3.png) 0 0 no-repeat;
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+opacity: 0;
+overflow: hidden;

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>《迷雾世界》官网——网易策略探索MMO手游</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"/>
+    <link rel="stylesheet" href="../css/animate.min.css"/>
+    <link rel="stylesheet" href="../css/public.css"/>
+    <link rel="stylesheet" href="../css/ztqmwsj.css"/>
+    <script src="../js/jquery-1.12.2.js"></script>
+</head>
+<body>
+    <!--头部只是占位置的-->
+    <div class="header"></div>
+    <!--右测的铆钉-->
+    <div class="navLeft" id="navLeft">
+        <a href="#part2" id="left1" > <i class="navLeft1"></i></a>
+        <a href="#part3" id="left2"><i class="navLeft2"></i></a>
+        <a href="#part4" id="left3"><i class="navLeft3"></i></a>
+        <a href="#top" id="left4"><i class="navLeft4"></i></a>
+        <span class="bord"></span>
+    </div>
+    <script>
+        //目的当鼠标移入就加入背景图片
+        var a = document.getElementById("navLeft").children;
+        //注册鼠标移入事件
+        for(var i = 0;i < a.length -2;i++){
+            a[i].onmouseover = function (){
+                this.style.background  = "url(../images/left_hover.png) no-repeat";
+                this.style.backgroundSize="84px 95px";
+            }
+            a[i].onmouseout = function (){
+                this.style.backgroundImage  = "";
+            }
+        }
+    </script>
+    <!--中间的主体-->
+    <div class="wrap">
+        <!--第一部分-->
+        <div class="part1" id="top">
+            <!--第一部分的上半-->
+            <div class="part1Top">
+                <div class="w">
+                    <!--logo部分-->
+                    <div class="tobar pr">
+                        <div class="logoImg pa"><a href="#"><h1>迷雾世界</h1></a></div>
+                        <div class="word">
+                            <p class="wordMwsj"><a href="#">迷雾世界</a></p>
+                            <p class="wordMessage"><a href="#">网易策略探索MMO手游</a></p>
+                        </div>
+                    </div>
+                    <!--进入官网链接部分-->
+                    <div class="go"><a href="../index.html"><h2>进入官网</h2></a></div>
+                </div>
+            </div>
+            <!--下半部分-->
+            <div class="part1Bottom">
+                <div class="w">
+                    <div class="slogn"></div>  
+                    <div class="downLoad">
+                        <div class="weixinQrc" id="weixinQrc">
+                            <p>扫一扫下载微信</p>
+                            <!--二维码图片-->
+                            <img src="../images/downloadQr.jpg" alt="微信二维码"/>
+                                <!--上下扫的盒子-->
+                            <span class="shao" id="shao"></span>
+                        </div>
+                        <!--中间的苹果和安卓图标-->
+                        <div class="downLoadCenter">
+                            <span class="ios" id="ios"><a href="#"></a></span>
+                            <span class="android" id="android"><a href="#">安卓下载</a></span>
+                        </div>
+                        <!--右侧的公测大礼包-->
+                        <div class="downLoadRight">
+                            <a href="#" id="hida">
+                                <span class="img"></span>
+                                <span>公测大礼包</span>
+                            </a>
+                        </div>
+                        <!--那个隐藏的div-->
+                        <div class="hid" id="hid">
+                            <!--关闭按钮-->
+                            <div class="close" id="hClose"></div>
+                            <!--两个标题-->
+                            <div class="hidTop">
+                                <span class="newMan" id="newMan"><a href="#" >公测新手礼包</a></span>
+                                <!-- 成长 grow-->
+                                <span class="grow" id="grow"><a href="#">公测成长礼包</a></span>
+                            </div>
+                            <!--单词:序列号seris  中间的变换的内容-->
+                            <div class="seris clearfix">
+                                <div class="newS" id="newS">
+                                    <p class="nTop">游戏公测开启后，进入游戏内点击左上角人物头像，选择“游戏设置”，然后“领取礼包”，输入序列号后即成功领取，礼包将直接发到背包中</p>
+                                    <div class="nCenter">兑换码：xs44835048</div>
+                                    <div class="nBottom">
+                                        <p class="loookOut">注意事项</p>
+                                        <p> 1.礼包有效期截止时间为：2017年6月30日23:59</p>
+                                        <p>2.每个帐号只能激活一次该种礼包</p>
+                                        <p> 3.此礼包仅限安卓用户兑换使用</p>
+                                    </div>
+                                </div>
+                                <div class="growS" id="growS">
+                                    <p class="nTop">游戏公测开启后，进入游戏内点击左上角人物头像，选择“游戏设置”，然后“领取礼包”，输入序列号后即成功领取，礼包将直接发到背包中</p>
+                                    <div class="nCenter">兑换码：cz67319405</div>
+                                    <div class="nBottom">
+                                        <p class="loookOut">注意事项</p>
+                                        <p> 1.礼包有效期截止时间为：2017年6月30日23:59</p>
+                                        <p>2.每个帐号只能激活一次该种礼包</p>
+                                        <p> 3.此礼包仅限安卓用户兑换使用</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--右边的播放按钮-->
+                    <div class="play" id="play">
+                        <i></i>
+                        <em></em>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function $id(id){
+                return document.getElementById(id);
+            }
+            //特效一:目的让盒子扫动
+            var shao = $id("shao");
+            var img = $id("weixinQrc").children[1];
+            var imgH = img.offsetHeight;
+            var current = shao.offsetTop ;
+            // 移动距离
+            var target = current;
+            //写定时器移动盒子
+            setInterval(function(){
+                //步长
+                var step = 4;
+                //移动的距离
+                //如果过头了就回到这里
+                target += step;
+                if(target > current + imgH){
+                    target = current;
+                }
+                //盒子的移动的范围top在30 到 150 之间 即一个图片的高度 到当到达图片的高度就返回
+                shao.style.top = target + "px";
+            },100);
+
+            //特效二  注册事件让盒子移入消逝
+            var ios = $id("ios");
+            ios.onmouseover = function(){
+                this.style.visibility ="hidden";
+            }
+            ios.onmouseout = function(){
+                this.style.visibility ="visible";
+            }
+            //特系三 鼠标移入 背景改变
+             var android = $id("android");
+            var a1 = android.children[0];
+            android.onmouseover = function(){
+                a1.style.backgroundPosition ="3px -221px";
+            }
+            android.onmouseout = function(){
+                a1.style.backgroundPosition = "-217px -164px";
+            }
+            //特效4  点击盒子出现
+            var hida = $id("hida");
+            var hid =  $id("hid");
+            var hClose  = $id("hClose");
+            //点击让盒子出现
+            hida.onclick = function(){
+                hid.style.display = "block";
+                //鼠标移入
+            }
+            //点击新手礼包和成长对应的内容出现
+            var newMan = $id("newMan");
+            var grow =$id("grow");
+            //获取装有内容的盒子元素
+            var newS =$id("newS");
+            var growS =$id("growS");
+            //鼠标移入事件
+            var oldG = null;  //记录grow有没有被点击
+            var oldN = null; //记录newMan有咩有被点击
+            //点击这个盒子  盒子的背景色改变成深色  另外一个变成浅蓝色的
+            newMan.onclick = function(){
+                this.style.backgroundPosition = "0 -166px";
+//                //对应的盒子出现  另一个消逝
+                newS.style.display = "block";
+                growS.style.display = "none";
+                //另一个盒子的背景改变
+                grow.style.backgroundPosition = "-176px -224px";
+                //开关属性
+                oldN = true;
+                oldG = false;
+            }
+            grow.onclick = function(){
+                this.style.backgroundPosition = "0 -166px";
+                //对应的盒子出现  另一个消逝
+                newS.style.display = "none";
+                growS.style.display = "block";
+                //另一个盒子的背景改变
+                newMan.style.backgroundPosition = "-176px -224px";
+                oldN = false;
+                oldG = true;
+            }
+            grow.onmouseover = function() {
+                    this.style.backgroundPosition = "0 -166px"
+            }
+            grow.onmouseout = function() {
+                if(!oldG){
+                    this.style.backgroundPosition ="-176px -224px";
+                }else{
+                    this.style.backgroundPosition = "0 -166px";
+                }
+            }
+            newMan.onmouseover = function() {
+                this.style.backgroundPosition = "0 -166px";
+            }
+            newMan.onmouseout = function() {
+                if(!oldN){
+                    this.style.backgroundPosition ="-176px -224px";
+                }else{
+                    this.style.backgroundPosition = "0 -166px";
+                }
+            }
+            //发现函数相同  写一个函数调用
+            //点击关闭盒子消逝
+            hClose.onclick = function(){
+                hid.style.display = "none";
+            }
+            //特效6  让播放转动
+            var  play = $id("play");
+            //步长
+            var tr = 10;
+            //次数
+            var t = 0;
+            setInterval(function() {
+//                如果超过360就初始化
+               if(t > 36){
+                t = 0;
+                  }
+                t++;
+                play.children[0].style.transform = "rotateZ("+ t*tr +"deg)";
+            },100);
+        </script>
+        <!--第二部分-->
+        <div class="part2" id="part2">
+            <div class="w">
+                <h2></h2>
+                <ul id="part2Ul">
+                    <!--<li class="lis1"><a href="javascript:void(0)"><img src="images/p2li1.png" /></a></li>-->
+                </ul>
+            </div>
+        </div>
+        <!--使用js动态的添加图片-->
+        <script>
+            //获取元素
+            var ul = document.getElementById("part2Ul");
+            //动态创建li标签并添加内容
+            for(var j =1; j <= 8 ;j++){
+                //创建li
+                var li = document.createElement("li");
+                //添加clssName
+                li.className = "lis"+j;
+                //添加内容
+                li.innerHTML = '<a href="javascript:void(0)"><img src="../images/p2li'+j+'_0.png" /></a>';
+                //添加到ul中
+                ul.appendChild(li);
+            }
+            var part2Ul   = document.getElementById("part2Ul");
+            var lis1 = part2Ul.children;
+            for(var h =1; h <= 8 ;h++){
+                lis1[h-1].children[0].style.background ="url(../images/p2li"+h+".png) no-repeat";
+            }
+            //目的:让每一个翻动
+
+            for(var i=0;i < lis1.length ;i++){
+                lis1[i].index = i;
+                lis1[i].onmouseover = function() {
+                    var index = this.index;
+                    //首先用动画让a标签翻转
+                    this.children[0].className = "flipout1";
+                    //然后当执行完动画一之后
+                    lis1[index].timer = setTimeout(fn1(),400);
+                    function fn1(){
+//                        记录背景
+                        lis1[index].children[0].str =  lis1[index].children[0].style.background ;
+                        //让a的背景改变为没有
+                        lis1[index].children[0].style.background = "";
+//                        让img出现
+                        lis1[index].children[0].children[0].style.display = "block";
+                        lis1[index].children[0].className = "flipout2";
+                    }
+//                    当到达时间之后,把旋转的角度固定
+                    lis1[index].timer =setTimeout(fn2(),1000);
+                    function fn2(){
+                        lis1[index].children[0].style. transform= "rotateY(180deg)";
+                    }
+                }
+                //反过来,把以上的步骤反过来
+                lis1[i].onmouseout = function(){
+                    var index = this.index;
+                    //首先用动画让a标签翻转
+                    this.children[0].className = "flipout3";
+                    //然后当执行完动画一之后
+                    lis1[index].timer = setTimeout(fn3(),400);
+                    function fn3(){
+//                        让im影藏
+                        lis1[index].children[0].children[0].style.display = "none";
+                        //让a的角度变反
+
+                        //让a的背景改变为原来的
+                        lis1[index].children[0].style.background = lis1[index].children[0].str;
+                        lis1[index].children[0].className = "flipout4";
+                    }
+//                    当到达时间之后,把旋转的角度固定
+                    lis1[index].timer =setTimeout(fn4(),1000);
+                    function fn4(){
+                        lis1[index].children[0].style. transform= "rotateY(0deg)";
+                    }
+                }
+            }
+        </script>
+        <!--第三部分-->
+        <div class="part3" id="part3">
+            <div class="w">
+                <h2></h2>
+                <!--主题部分-->
+                <div class="mine clearfix">
+                    <!--大图及介绍-->
+                    <div class="bigImg">
+                        <!--左边的介绍-->
+                        <div class="b-left">
+                            <!--称号disn-->
+                            <p class="disn">
+                                <i></i>
+                                <span>荆棘射手</span>
+                            </p>
+                            <!--大名字-->
+                            <p class="theName">爱尔隆</p>
+                            <!--类型mold-->
+                            <p class="mold">
+                                <span class="mLeft">类型:输出</span>
+                                <span class="mRight">射程:远</span>
+                            </p>
+                            <!--羁绊solder-->
+                            <p class="solder">羁绊 : 全体最大生命+2.0%</p>
+                            <!--背景-->
+                            <p class="manBg">人物背景</p>
+                            <!--详细信息 mes-->
+                            <p class="mess">精灵们都恋家，喜欢森林和湖水，爱尔隆却是个例外。他在贫瘠的沙漠中和兽人掰过手腕，在呼啸的风雪里和矮人打过牌，他的足迹几乎踏遍了整个大陆.....</p>
+                        </div>
+                        <!--/右边的大图-->
+                        <div class="b-right"><img src="../images/part3-b1.png" alt="爱尔隆"/></div>
+                    </div>
+                    <!--箭头-->
+                    <div class="arrow">
+                        <i class="arrow-left"></i>
+                        <i class="arrow-right"></i>
+                    </div>
+                    <!--小图-->
+                    <div class="smallImg">
+                        <ul>
+                            <li class="sm1">
+                                <i></i>
+                                <span>爱尔隆</span>
+                            </li>
+                            <li class="sm2">
+                                <i></i>
+                                <span>戴安娜</span>
+                            </li>
+                            <li class="sm3">
+                                <i></i>
+                                <span>夜影</span>
+                            </li>
+                            <li class="sm4">
+                                <i></i>
+                                <span>蓓露丝</span>
+                            <li class="sm5">
+                                <i></i>
+                                <span>夜莺</span>
+                            </li>
+                        </ul>
+                        <!--更多提示部分-->
+                        <div class="more"><a href="#"></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--第四部分-->
+        <div class="part4" id="part4">
+            <div class="w">
+                <h2></h2>
+                <!--轮播图-->
+                <div class="spider">
+                    <ul class="spiderUl" id="spiderUl">
+                        <li  class="lis"><img src="../images/part4-l1.jpg" alt=""/></li>
+                        <li class="lis hide"><img src="../images/part4-l2.jpg" alt=""/></li>
+                        <li class="lis hide"><img src="../images/part4-l3.jpg" alt=""/></li>
+                        <li class="lis hide"><img src="../images/part4-l4.jpg" alt=""/></li>
+                        <li class="lis hide"><img src="../images/part4-l5.jpg" alt=""/></li>
+                    </ul>
+                    <div class="arrow">
+                        <i class="arrow-left" id="arrow-left"></i>
+                        <i class="arrow-right" id="arrow-right"></i>
+                    </div>
+                    <div class="cancle">
+                       <i class="ci current"></i>
+                       <i class="ci"></i>
+                       <i class="ci"></i>
+                       <i class="ci"></i>
+                       <i class="ci"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        //获取元素
+        $(function(){
+
+        var su = $("#spiderUl");
+        var lis =$(".lis");
+        var ci =$(".ci");
+        //注册事件 遍历ci小圆点  点击小圆点 对应的图片隐藏 下一张透明度变为1  结合css3
+        for(var j =0;j< lis.length;j++){
+            ci.eq(j).on("click",function(){
+                //排他
+               lis.addClass("hide");
+                lis.eq($(this).index()).removeClass("hide");
+                //添加写好的类名
+                lis.eq($(this).index()) .addClass("myClass");
+//                改变小圆点的样式  首先排他
+                ci.removeClass("current");
+                $(this).addClass("current");
+
+            });
+        }
+            //左右箭头的写法
+            var arrowLeft = $("#arrow-left");
+            var arrowRight = $("#arrow-right");
+            //设置一个索引
+            var currentIndex = 0;
+            //左箭头的点击事件
+            arrowLeft.on("click",function(){
+                //如果当前是第一个
+                if(currentIndex == 0){
+                    currentIndex = lis.length ;
+                }
+                currentIndex--;
+                getSty();
+            });
+            arrowRight.on("click",function(){
+                //如果当前是最后
+                if(currentIndex == lis.length -1){
+                    currentIndex = -1;
+                }
+                currentIndex++;
+                getSty();
+
+            });
+            function getSty(){
+                ci.removeClass("current");
+                ci.eq(currentIndex).addClass("current");
+                lis.addClass("hide");
+                lis.eq(currentIndex).removeClass("hide");
+                //添加写好的类名 调用动画
+                lis.eq(currentIndex).addClass("myClass");
+            }
+            setInterval(function(){
+                //如果当前是最后
+                if(currentIndex == lis.length -1){
+                    currentIndex = -1;
+                }
+                currentIndex++;
+                getSty();
+            },2000);
+        });
+    </script>
+</body>
+</html>

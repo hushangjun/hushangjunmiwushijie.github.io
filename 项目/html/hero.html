@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"/>
+    <link rel="stylesheet" href="../css/public.css"/>
+    <link rel="stylesheet" href="../css/miwushiji.css"/>
+    <link rel="stylesheet" href="../css/heroPalace.css"/>
+    <link rel="stylesheet" href="../css/fotte.css"/>
+    <script src="../js/jquery-1.12.2.js"></script>
+    <script src="../js/miwushijie.js"></script>
+    <script src="../js/heroPalace.js"></script>
+    <script>
+//头部特效
+        $(function(){
+//网易顶部部分  鼠标移入背景变化
+            $("#huTopbar").find(".bianhua").hover(function(){
+                $(this).css({"backgroundColor":"#ccc","borderBottom":"3px solid #bc2e2e"})
+            },function(){
+                $(this).css({"backgroundColor":"#fbfbfb","borderBottom":""})
+            })
+// 顶部右边自动轮播字体
+            var index = 0;
+            setInterval(function() {
+                if(index==2){
+                    $("#upDown").css({"top":0})
+                    index=-1
+                }
+                index++
+                $("#upDown").animate({"top": -52*index}, 500)
+            }, 1000)
+//迷雾头部关注微信部分
+            $("#weixin").hover(function(){
+                $("#weixin .Huweixincode").css({"display":"block",})
+            },function(){
+                $("#weixin .Huweixincode").css({"display":"none"})
+            });
+        });
+    </script>
+</head>
+<body>
+<!--主体内容-->
+<div class="contentLh ">
+    <div class="characterLh">
+<!--头部 -->
+        <div class="huTopbar" id="huTopbar">
+            <!--版心部分1000px-->
+            <div class="w clearfix">
+                <a href="#" class="huWangyiLogo"></a>
+                <!--注册充值-->
+                <div class="huTopbar_mid">
+                    <a href="../chare/vcindex.html" class="bianhua">注册账号</a>
+                    <a href="../chare/vcindex.html" class="bianhua">安卓充值</a>
+
+                </div>
+                <!--充值新闻-->
+                <div class="huTopbar_right">
+                    <ul id="upDown">
+                        <li><a href="#" class="bianhua">领取网易严选宝箱</a></li>
+                        <li><a href="#" class="bianhua">安卓充值9.8折</a></li>
+                        <li><a href="#" class="bianhua">领取网易严选宝箱</a></li>
+
+                    </ul>
+                </div>
+                <!--网页游戏全目录-->
+                <div class="huTopbar_menu">
+                    <span class="bianhua">网易游戏全目录 <i class="myiconfont">&#xe8f9;</i></span>
+                </div>
+                <div class="allmenu">
+                    <ul class="menuTitle">
+                        <li class="menuTitle_c1">手机游戏</li>
+                        <li class="menuTitle_c2">客户端游戏</li>
+                        <li class="menuTitle_c4">游戏辅助</li>
+                    </ul>
+                    <ul class="youxiName">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+<!--导航-->
+        <div class="huNavWarp clearfix">
+            <div class="huLogoName">
+                <a href="" class="huMiyiLogo">迷雾世界</a>
+                <p>
+                    迷雾世界<br/>
+                    网易策略探索MMO手游
+                </p>
+            </div>
+            <div class="huNavWarpTit">
+                <ul>
+                    <li><a href="../index.html"><i class="myiconfont">&#xe71f;</i>官网首页</a></li>
+                    <li><a href="../gmpage2.html"><i class="myiconfont">&#xe71f;</i>新闻公告</a></li>
+                    <li><a href="../pages/charac.html"><i class="myiconfont">&#xe71f;</i>玩法特色</a></li>
+                    <li><a href="../html/hero.html"><i class="myiconfont">&#xe71f;</i>英雄殿堂</a></li>
+                    <li><a href="../direction.html"><i class="myiconfont">&#xe71f;</i>游戏资料</a></li>
+                    <li><a href="#"><i class="myiconfont">&#xe71f;</i>游戏论坛</a></li>
+                </ul>
+            </div>
+            <div class="guanzghu">
+                <a href="javascript:void(0)" class="weixin" id="weixin">
+                    <div class="Huweixincode">
+                        <img src="../images/wx_code_fb7495e.jpg" alt=""/>
+                        <p>扫描二维码<br>关注微信公众号<br>
+                            <span>wymwsj</span>
+                        </p>
+                    </div>
+                </a>
+
+                <p>关注官方公众号 <br/>
+                    海量活动抢先看</p>
+            </div>
+            <div class="line"></div>
+        </div>
+        <!--英雄介绍-->
+        <div class="heroIntroduceLh hero1">
+            <div class="heroImgLh">
+                <img src="../images/heroPhoto/1.png" class="heroLh">
+            </div>
+            <!--英雄详情-->
+            <div class="mainContentLh">
+                <div class="detailsLh">
+                    <h3 class="affectNameLh">禁默法师</h3>
+                    <h3 class="nameLh">贝肯</h3>
+                    <h4>人物背景</h4>
+                    <p>贝肯是精灵王庭议会中唯一非贵族血统出身的议员，但是没人敢议论他的出身，哪怕是在他背后。即使纵观精灵族历史，像他这样展现出极高魔法天赋的人也是少数。所有人都称赞他优异且彬彬有礼，所有人都清楚他即使比现在更优异十倍也无法到达更高的地位——那么，优异一百倍也许可以？</p>
+                    <h4>技能</h4>
+                    <ul class="skillLh">
+                        <li>
+                            <a href="javascript:;">
+                                <img src="../images/skill/10001.png" />
+                                <em style = "display:block;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>静默领域</span>
+                            </a>
+                            <p>对敌方全体造成每秒100%+107点魔法伤害，并附带沉默效果（无法被驱散），持续10秒</p>
+                        </li>
+                        <li >
+                            <a href="javascript:;">
+                                <img src="../images/skill/10002.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>无声祷告</span>
+                            </a>
+                            <p style = "display:none;">对目标造成117点魔法伤害，并沉默5秒</p>
+                        </li>
+                        <li class=".clearfix">
+                            <a href="javascript:;">
+                                <img src="../images/skill/10003.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>禁言</span>
+                            </a>
+                            <p style = "display:none;">对敌人释放，沉默目标并使其受到的魔法伤害增加，持续10秒。</p>
+                        </li>
+                        <li class=".clearfix">
+                            <a href="javascript:;">
+                                <img src="../images/skill/10004.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>反制冲击</span>
+                            </a>
+                            <p style = "display:none;">对目标造成155%+123点魔法伤害。</p>
+                        </li>
+                    </ul>
+                    <div class="resultLh">
+                        <h5>类型&nbsp;&nbsp;<span>输出</span></h5>
+                        <h5>射程&nbsp;&nbsp;<span>远</span></h5>
+                        <h5>羁绊&nbsp;&nbsp;<span>全体魔法强度+2.0%</span></h5>
+                        <div class="hurt"><img src="../images/hurt.png" alt=""/></div>
+                    </div>
+                    <!--英雄头像部分 -->
+                </div>
+            </div>
+        </div>
+        <div class="heroIntroduceLh hero2">
+            <div class="heroImgLh">
+                <img src="../images/heroPhoto/2.png" class="heroLh">
+            </div>
+            <!--英雄详情-->
+            <div class="mainContentLh">
+                <div class="detailsLh">
+                    <h3 class="affectNameLh">凋零法师</h3>
+                    <h3 class="nameLh">巫诺瓿</h3>
+                    <h4>人物背景</h4>
+                    <p>巫诺瓦是圣光法师团的首席指挥官，她面对黑骑军团的大军压境也毫无惧色，是许多人心目中的传奇。第三次史诗战役中，法师团在黑骑潮水般的不断冲锋中战败，巫诺瓦一直战斗到最后一刻。对圣光军团来说，她是一个英雄，可没人知道，她被地底军团复活，成为了自己最厌恶的亡灵。</p>
+                    <h4>技能</h4>
+                    <ul class="skillLh">
+                        <li >
+                            <a href="javascript:;">
+                                <img src="../images/skill/20001.png" />
+                                <em style = "display:block;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>寒霜侵袭</span>
+                            </a>
+                            <p>对敌方全体造成210%+139点魔法伤害，降低魔抗16点，持续12秒。</p>
+                        </li>
+                        <li >
+                            <a href="javascript:;">
+                                <img src="../images/skill/20002.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>冰霜打击</span>
+                            </a>
+                            <p style = "display:none;">对当前目标造成115%+98点魔法伤害，并降低魔法抗性23%，持续12秒</p>
+                        </li>
+                        <li >
+                            <a href="javascript:;">
+                                <img src="../images/skill/20003.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>连环霜冻</span>
+                            </a>
+                            <p style = "display:none;">对目标造成4次弹射，每次造成120%+117点魔法伤害，并冰冻2秒。</p>
+                        </li>
+                        <li >
+                            <a href="javascript:;">
+                                <img src="../images/skill/20004.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>冰冷之环</span>
+                            </a>
+                            <p style = "display:none;">光环：减低所有敌人的魔法抗性12.3点。</p>
+                        </li>
+                    </ul>
+                    <div class="resultLh">
+                        <h5>类型&nbsp;&nbsp;<span>辅助</span></h5>
+                        <h5>射程&nbsp;&nbsp;<span>远</span></h5>
+                        <h5>羁绊&nbsp;&nbsp;<span>全体魔法强度+2.0%</span></h5>
+                        <div class="hurt"><img src="../images/hurt.png" alt=""/></div>
+                    </div>
+                    <!--英雄头像部分 -->
+                </div>
+            </div>
+        </div>
+        <div class="heroIntroduceLh hero3">
+            <div class="heroImgLh">
+                <img src="../images/heroPhoto/3.png" class="heroLh">
+            </div>
+            <!--英雄详情-->
+            <div class="mainContentLh">
+                <div class="detailsLh">
+                    <h3 class="affectNameLh">禁默法师</h3>
+                    <h3 class="nameLh">贝肯</h3>
+                    <h4>人物背景</h4>
+                    <p>贝肯是精灵王庭议会中唯一非贵族血统出身的议员，但是没人敢议论他的出身，哪怕是在他背后。即使纵观精灵族历史，像他这样展现出极高魔法天赋的人也是少数。所有人都称赞他优异且彬彬有礼，所有人都清楚他即使比现在更优异十倍也无法到达更高的地位——那么，优异一百倍也许可以？</p>
+                    <h4>技能</h4>
+                    <ul class="skillLh">
+                        <li >
+                            <a href="javascript:;">
+                                <img src="../images/skill/30001.png" />
+                                <em style = "display:block;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>静默领域</span>
+                            </a>
+                            <p>对敌方全体造成每秒100%+107点魔法伤害，并附带沉默效果（无法被驱散），持续10秒</p>
+                        </li>
+                        <li >
+                            <a href="javascript:;">
+                                <img src="../images/skill/30002.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>无声祷告</span>
+                            </a>
+                            <p style = "display:none;">对目标造成117点魔法伤害，并沉默5秒</p>
+                        </li>
+                        <li class=".clearfix">
+                            <a href="javascript:;">
+                                <img src="../images/skill/30003.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>禁言</span>
+                            </a>
+                            <p style = "display:none;">对敌人释放，沉默目标并使其受到的魔法伤害增加，持续10秒。</p>
+                        </li>
+                        <li class=".clearfix">
+                            <a href="javascript:;">
+                                <img src="../images/skill/30004.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>反制冲击</span>
+                            </a>
+                            <p style = "display:none;">对目标造成155%+123点魔法伤害。</p>
+                        </li>
+                    </ul>
+                    <div class="resultLh">
+                        <h5>类型&nbsp;&nbsp;<span>输出</span></h5>
+                        <h5>射程&nbsp;&nbsp;<span>远</span></h5>
+                        <h5>羁绊&nbsp;&nbsp;<span>全体魔法强度+2.0%</span></h5>
+                        <div class="hurt"><img src="../images/hurt.png" alt=""/></div>
+                    </div>
+                    <!--英雄头像部分 -->
+                </div>
+            </div>
+        </div>
+        <div class="heroIntroduceLh hero4">
+            <div class="heroImgLh">
+                <img src="../images/heroPhoto/4.png" class="heroLh">
+            </div>
+            <!--英雄详情-->
+            <div class="mainContentLh">
+                <div class="detailsLh">
+                    <h3 class="affectNameLh">凋零法师</h3>
+                    <h3 class="nameLh">巫诺瓿</h3>
+                    <h4>人物背景</h4>
+                    <p>巫诺瓦是圣光法师团的首席指挥官，她面对黑骑军团的大军压境也毫无惧色，是许多人心目中的传奇。第三次史诗战役中，法师团在黑骑潮水般的不断冲锋中战败，巫诺瓦一直战斗到最后一刻。对圣光军团来说，她是一个英雄，可没人知道，她被地底军团复活，成为了自己最厌恶的亡灵。</p>
+                    <h4>技能</h4>
+                    <ul class="skillLh">
+                        <li >
+                            <a href="javascript:;">
+                                <img src="../images/skill/40001.png" />
+                                <em style = "display:block;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>寒霜侵袭</span>
+                            </a>
+                            <p>对敌方全体造成210%+139点魔法伤害，降低魔抗16点，持续12秒。</p>
+                        </li>
+                        <li >
+                            <a href="javascript:;">
+                                <img src="../images/skill/40002.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>冰霜打击</span>
+                            </a>
+                            <p style = "display:none;">对当前目标造成115%+98点魔法伤害，并降低魔法抗性23%，持续12秒</p>
+                        </li>
+                        <li class=".clearfix">
+                            <a href="javascript:;">
+                                <img src="../images/skill/40003.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>连环霜冻</span>
+                            </a>
+                            <p style = "display:none;">对目标造成4次弹射，每次造成120%+117点魔法伤害，并冰冻2秒。</p>
+                        </li>
+                        <li class=".clearfix">
+                            <a href="javascript:;">
+                                <img src="../images/skill/40004.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>冰冷之环</span>
+                            </a>
+                            <p style = "display:none;">光环：减低所有敌人的魔法抗性12.3点。</p>
+                        </li>
+                    </ul>
+                    <div class="resultLh">
+                        <h5>类型&nbsp;&nbsp;<span>辅助</span></h5>
+                        <h5>射程&nbsp;&nbsp;<span>远</span></h5>
+                        <h5>羁绊&nbsp;&nbsp;<span>全体魔法强度+2.0%</span></h5>
+                        <div class="hurt"><img src="../images/hurt.png" alt=""/></div>
+                    </div>
+                    <!--英雄头像部分 -->
+                </div>
+            </div>
+        </div>
+        <div class="heroIntroduceLh hero5">
+            <div class="heroImgLh">
+                <img src="../images/heroPhoto/5.png" class="heroLh">
+            </div>
+            <!--英雄详情-->
+            <div class="mainContentLh">
+                <div class="detailsLh">
+                    <h3 class="affectNameLh">禁默法师</h3>
+                    <h3 class="nameLh">贝肯</h3>
+                    <h4>人物背景</h4>
+                    <p>贝肯是精灵王庭议会中唯一非贵族血统出身的议员，但是没人敢议论他的出身，哪怕是在他背后。即使纵观精灵族历史，像他这样展现出极高魔法天赋的人也是少数。所有人都称赞他优异且彬彬有礼，所有人都清楚他即使比现在更优异十倍也无法到达更高的地位——那么，优异一百倍也许可以？</p>
+                    <h4>技能</h4>
+                    <ul class="skillLh">
+                        <li >
+                            <a href="javascript:;">
+                                <img src="../images/skill/50001.png" />
+                                <em style = "display:block;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>静默领域</span>
+                            </a>
+                            <p>对敌方全体造成每秒100%+107点魔法伤害，并附带沉默效果（无法被驱散），持续10秒</p>
+                        </li>
+                        <li >
+                            <a href="javascript:;">
+                                <img src="../images/skill/50002.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>无声祷告</span>
+                            </a>
+                            <p style = "display:none;">对目标造成117点魔法伤害，并沉默5秒</p>
+                        </li>
+                        <li class=".clearfix">
+                            <a href="javascript:;">
+                                <img src="../images/skill/50003.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>禁言</span>
+                            </a>
+                            <p style = "display:none;">对敌人释放，沉默目标并使其受到的魔法伤害增加，持续10秒。</p>
+                        </li>
+                        <li class=".clearfix">
+                            <a href="javascript:;">
+                                <img src="../images/skill/50004.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>反制冲击</span>
+                            </a>
+                            <p style = "display:none;">对目标造成155%+123点魔法伤害。</p>
+                        </li>
+                    </ul>
+                    <div class="resultLh">
+                        <h5>类型&nbsp;&nbsp;<span>输出</span></h5>
+                        <h5>射程&nbsp;&nbsp;<span>远</span></h5>
+                        <h5>羁绊&nbsp;&nbsp;<span>全体魔法强度+2.0%</span></h5>
+                        <div class="hurt"><img src="../images/hurt.png" alt=""/></div>
+                    </div>
+                    <!--英雄头像部分 -->
+                </div>
+            </div>
+        </div>
+        <div class="heroIntroduceLh hero6">
+            <div class="heroImgLh">
+                <img src="../images/heroPhoto/6.png" class="heroLh">
+            </div>
+            <!--英雄详情-->
+            <div class="mainContentLh">
+                <div class="detailsLh">
+                    <h3 class="affectNameLh">凋零法师</h3>
+                    <h3 class="nameLh">巫诺瓿</h3>
+                    <h4>人物背景</h4>
+                    <p>巫诺瓦是圣光法师团的首席指挥官，她面对黑骑军团的大军压境也毫无惧色，是许多人心目中的传奇。第三次史诗战役中，法师团在黑骑潮水般的不断冲锋中战败，巫诺瓦一直战斗到最后一刻。对圣光军团来说，她是一个英雄，可没人知道，她被地底军团复活，成为了自己最厌恶的亡灵。</p>
+                    <h4>技能</h4>
+                    <ul class="skillLh">
+                        <li >
+                            <a href="javascript:;">
+                                <img src="../images/skill/60001.png" />
+                                <em style = "display:block;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>寒霜侵袭</span>
+                            </a>
+                            <p>对敌方全体造成210%+139点魔法伤害，降低魔抗16点，持续12秒。</p>
+                        </li>
+                        <li >
+                            <a href="javascript:;">
+                                <img src="../images/skill/60002.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>冰霜打击</span>
+                            </a>
+                            <p style = "display:none;">对当前目标造成115%+98点魔法伤害，并降低魔法抗性23%，持续12秒</p>
+                        </li>
+                        <li class=".clearfix">
+                            <a href="javascript:;">
+                                <img src="../images/skill/60003.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>连环霜冻</span>
+                            </a>
+                            <p style = "display:none;">对目标造成4次弹射，每次造成120%+117点魔法伤害，并冰冻2秒。</p>
+                        </li>
+                        <li class=".clearfix">
+                            <a href="javascript:;">
+                                <img src="../images/skill/60004.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>冰冷之环</span>
+                            </a>
+                            <p style = "display:none;">光环：减低所有敌人的魔法抗性12.3点。</p>
+                        </li>
+                    </ul>
+                    <div class="resultLh">
+                        <h5>类型&nbsp;&nbsp;<span>辅助</span></h5>
+                        <h5>射程&nbsp;&nbsp;<span>远</span></h5>
+                        <h5>羁绊&nbsp;&nbsp;<span>全体魔法强度+2.0%</span></h5>
+                        <div class="hurt"><img src="../images/hurt.png" alt=""/></div>
+                    </div>
+                    <!--英雄头像部分 -->
+                </div>
+            </div>
+        </div>
+        <div class="heroIntroduceLh hero7">
+            <div class="heroImgLh">
+                <img src="../images/heroPhoto/7.png" class="heroLh">
+            </div>
+            <!--英雄详情-->
+            <div class="mainContentLh">
+                <div class="detailsLh">
+                    <h3 class="affectNameLh">禁默法师</h3>
+                    <h3 class="nameLh">贝肯</h3>
+                    <h4>人物背景</h4>
+                    <p>贝肯是精灵王庭议会中唯一非贵族血统出身的议员，但是没人敢议论他的出身，哪怕是在他背后。即使纵观精灵族历史，像他这样展现出极高魔法天赋的人也是少数。所有人都称赞他优异且彬彬有礼，所有人都清楚他即使比现在更优异十倍也无法到达更高的地位——那么，优异一百倍也许可以？</p>
+                    <h4>技能</h4>
+                    <ul class="skillLh">
+                        <li >
+                            <a href="javascript:;">
+                                <img src="../images/skill/70001.png" />
+                                <em style = "display:block;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>静默领域</span>
+                            </a>
+                            <p>对敌方全体造成每秒100%+107点魔法伤害，并附带沉默效果（无法被驱散），持续10秒</p>
+                        </li>
+                        <li >
+                            <a href="javascript:;">
+                                <img src="../images/skill/70002.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>无声祷告</span>
+                            </a>
+                            <p style = "display:none;">对目标造成117点魔法伤害，并沉默5秒</p>
+                        </li>
+                        <li class=".clearfix">
+                            <a href="javascript:;">
+                                <img src="../images/skill/70003.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>禁言</span>
+                            </a>
+                            <p style = "display:none;">对敌人释放，沉默目标并使其受到的魔法伤害增加，持续10秒。</p>
+                        </li>
+                        <li class=".clearfix">
+                            <a href="javascript:;">
+                                <img src="../images/skill/70004.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>反制冲击</span>
+                            </a>
+                            <p style = "display:none;">对目标造成155%+123点魔法伤害。</p>
+                        </li>
+                    </ul>
+                    <div class="resultLh">
+                        <h5>类型&nbsp;&nbsp;<span>输出</span></h5>
+                        <h5>射程&nbsp;&nbsp;<span>远</span></h5>
+                        <h5>羁绊&nbsp;&nbsp;<span>全体魔法强度+2.0%</span></h5>
+                        <div class="hurt"><img src="../images/hurt.png" alt=""/></div>
+                    </div>
+                    <!--英雄头像部分 -->
+                </div>
+            </div>
+        </div>
+        <div class="heroIntroduceLh hero8">
+            <div class="heroImgLh">
+                <img src="../images/heroPhoto/8.png" class="heroLh">
+            </div>
+            <!--英雄详情-->
+            <div class="mainContentLh">
+                <div class="detailsLh">
+                    <h3 class="affectNameLh">凋零法师</h3>
+                    <h3 class="nameLh">巫诺瓿</h3>
+                    <h4>人物背景</h4>
+                    <p>巫诺瓦是圣光法师团的首席指挥官，她面对黑骑军团的大军压境也毫无惧色，是许多人心目中的传奇。第三次史诗战役中，法师团在黑骑潮水般的不断冲锋中战败，巫诺瓦一直战斗到最后一刻。对圣光军团来说，她是一个英雄，可没人知道，她被地底军团复活，成为了自己最厌恶的亡灵。</p>
+                    <h4>技能</h4>
+                    <ul class="skillLh">
+                        <li >
+                            <a href="javascript:;">
+                                <img src="../images/skill/80001.png" />
+                                <em style = "display:block;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>寒霜侵袭</span>
+                            </a>
+                            <p>对敌方全体造成210%+139点魔法伤害，降低魔抗16点，持续12秒。</p>
+                        </li>
+                        <li >
+                            <a href="javascript:;">
+                                <img src="../images/skill/80002.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>冰霜打击</span>
+                            </a>
+                            <p style = "display:none;">对当前目标造成115%+98点魔法伤害，并降低魔法抗性23%，持续12秒</p>
+                        </li>
+                        <li class=".clearfix">
+                            <a href="javascript:;">
+                                <img src="../images/skill/80003.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>连环霜冻</span>
+                            </a>
+                            <p style = "display:none;">对目标造成4次弹射，每次造成120%+117点魔法伤害，并冰冻2秒。</p>
+                        </li>
+                        <li class=".clearfix">
+                            <a href="javascript:;">
+                                <img src="../images/skill/80004.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>冰冷之环</span>
+                                <p style = "display:none;">光环：减低所有敌人的魔法抗性12.3点。</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="resultLh">
+                        <h5>类型&nbsp;&nbsp;<span>辅助</span></h5>
+                        <h5>射程&nbsp;&nbsp;<span>远</span></h5>
+                        <h5>羁绊&nbsp;&nbsp;<span>全体魔法强度+2.0%</span></h5>
+                        <div class="hurt"><img src="../images/hurt.png" alt=""/></div>
+                    </div>
+                    <!--英雄头像部分 -->
+                </div>
+            </div>
+        </div>
+        <div class="heroIntroduceLh hero9">
+            <div class="heroImgLh">
+                <img src="../images/heroPhoto/9.png" class="heroLh">
+            </div>
+            <!--英雄详情-->
+            <div class="mainContentLh">
+                <div class="detailsLh">
+                    <h3 class="affectNameLh">禁默法师</h3>
+                    <h3 class="nameLh">贝肯</h3>
+                    <h4>人物背景</h4>
+                    <p>贝肯是精灵王庭议会中唯一非贵族血统出身的议员，但是没人敢议论他的出身，哪怕是在他背后。即使纵观精灵族历史，像他这样展现出极高魔法天赋的人也是少数。所有人都称赞他优异且彬彬有礼，所有人都清楚他即使比现在更优异十倍也无法到达更高的地位——那么，优异一百倍也许可以？</p>
+                    <h4>技能</h4>
+                    <ul class="skillLh">
+                        <li >
+                            <a href="javascript:;">
+                                <img src="../images/skill/90001.png" />
+                                <em style = "display:block;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>静默领域</span>
+                            </a>
+                            <p>对敌方全体造成每秒100%+107点魔法伤害，并附带沉默效果（无法被驱散），持续10秒</p>
+                        </li>
+                        <li >
+                            <a href="javascript:;">
+                                <img src="../images/skill/90002.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>无声祷告</span>
+                            </a>
+                            <p style = "display:none;">对目标造成117点魔法伤害，并沉默5秒</p>
+                        </li>
+                        <li class=".clearfix">
+                            <a href="javascript:;">
+                                <img src="../images/skill/90003.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>禁言</span>
+                            </a>
+                            <p style = "display:none;">对敌人释放，沉默目标并使其受到的魔法伤害增加，持续10秒。</p>
+                        </li>
+                        <li class=".clearfix">
+                            <a href="javascript:;">
+                                <img src="../images/skill/90004.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>反制冲击</span>
+                            </a>
+                            <p style = "display:none;">对目标造成155%+123点魔法伤害。</p>
+                        </li>
+                    </ul>
+                    <div class="resultLh">
+                        <h5>类型&nbsp;&nbsp;<span>输出</span></h5>
+                        <h5>射程&nbsp;&nbsp;<span>远</span></h5>
+                        <h5>羁绊&nbsp;&nbsp;<span>全体魔法强度+2.0%</span></h5>
+                        <div class="hurt"><img src="../images/hurt.png" alt=""/></div>
+                    </div>
+                    <!--英雄头像部分 -->
+                </div>
+            </div>
+        </div>
+        <div class="heroIntroduceLh hero10">
+            <div class="heroImgLh">
+                <img src="../images/heroPhoto/10.png" class="heroLh">
+            </div>
+            <!--英雄详情-->
+            <div class="mainContentLh">
+                <div class="detailsLh">
+                    <h3 class="affectNameLh">凋零法师</h3>
+                    <h3 class="nameLh">巫诺瓿</h3>
+                    <h4>人物背景</h4>
+                    <p>巫诺瓦是圣光法师团的首席指挥官，她面对黑骑军团的大军压境也毫无惧色，是许多人心目中的传奇。第三次史诗战役中，法师团在黑骑潮水般的不断冲锋中战败，巫诺瓦一直战斗到最后一刻。对圣光军团来说，她是一个英雄，可没人知道，她被地底军团复活，成为了自己最厌恶的亡灵。</p>
+                    <h4>技能</h4>
+                    <ul class="skillLh">
+                        <li >
+                            <a href="javascript:;">
+                                <img src="../images/skill/100001.png" />
+                                <em style = "display:block;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>寒霜侵袭</span>
+                            </a>
+                            <p>对敌方全体造成210%+139点魔法伤害，降低魔抗16点，持续12秒。</p>
+                        </li>
+                        <li >
+                            <a href="javascript:;">
+                                <img src="../images/skill/100002.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>冰霜打击</span>
+                            </a>
+                            <p style = "display:none;">对当前目标造成115%+98点魔法伤害，并降低魔法抗性23%，持续12秒</p>
+                        </li>
+                        <li class=".clearfix">
+                            <a href="javascript:;">
+                                <img src="../images/skill/100003.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>连环霜冻</span>
+                            </a>
+                            <p style = "display:none;">对目标造成4次弹射，每次造成120%+117点魔法伤害，并冰冻2秒。</p>
+                        </li>
+                        <li class=".clearfix">
+                            <a href="javascript:;">
+                                <img src="../images/skill/100004.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>冰冷之环</span>
+                            </a>
+                            <p style = "display:none;">光环：减低所有敌人的魔法抗性12.3点。</p>
+                        </li>
+                    </ul>
+                    <div class="resultLh">
+                        <h5>类型&nbsp;&nbsp;<span>辅助</span></h5>
+                        <h5>射程&nbsp;&nbsp;<span>远</span></h5>
+                        <h5>羁绊&nbsp;&nbsp;<span>全体魔法强度+2.0%</span></h5>
+                        <div class="hurt"><img src="../images/hurt.png" alt=""/></div>
+                    </div>
+                    <!--英雄头像部分 -->
+                </div>
+            </div>
+        </div>
+        <div class="heroIntroduceLh hero11">
+        <div class="heroImgLh">
+            <img src="../images/heroPhoto/14.png" class="heroLh">
+        </div>
+        <!--英雄详情-->
+        <div class="mainContentLh">
+            <div class="detailsLh">
+                <h3 class="affectNameLh">禁默法师</h3>
+                <h3 class="nameLh">贝肯</h3>
+                <h4>人物背景</h4>
+                <p>贝肯是精灵王庭议会中唯一非贵族血统出身的议员，但是没人敢议论他的出身，哪怕是在他背后。即使纵观精灵族历史，像他这样展现出极高魔法天赋的人也是少数。所有人都称赞他优异且彬彬有礼，所有人都清楚他即使比现在更优异十倍也无法到达更高的地位——那么，优异一百倍也许可以？</p>
+                <h4>技能</h4>
+                <ul class="skillLh">
+                    <li >
+                        <a href="javascript:;">
+                            <img src="../images/skill/140001.png" />
+                            <em style = "display:block;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                            <span>静默领域</span>
+                        </a>
+                        <p>对敌方全体造成每秒100%+107点魔法伤害，并附带沉默效果（无法被驱散），持续10秒</p>
+                    </li>
+                    <li >
+                        <a href="javascript:;">
+                            <img src="../images/skill/140002.png" />
+                            <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                            <span>无声祷告</span>
+                        </a>
+                        <p style = "display:none;">对目标造成117点魔法伤害，并沉默5秒</p>
+                    </li>
+                    <li class=".clearfix">
+                        <a href="javascript:;">
+                            <img src="../images/skill/140003.png" />
+                            <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                            <span>禁言</span>
+                        </a>
+                        <p style = "display:none;">对敌人释放，沉默目标并使其受到的魔法伤害增加，持续10秒。</p>
+                    </li>
+                    <li class=".clearfix">
+                        <a href="javascript:;">
+                            <img src="../images/skill/140004.png" />
+                            <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                            <span>反制冲击</span>
+                        </a>
+                        <p style = "display:none;">对目标造成155%+123点魔法伤害。</p>
+                    </li>
+                </ul>
+                <div class="resultLh">
+                    <h5>类型&nbsp;&nbsp;<span>输出</span></h5>
+                    <h5>射程&nbsp;&nbsp;<span>远</span></h5>
+                    <h5>羁绊&nbsp;&nbsp;<span>全体魔法强度+2.0%</span></h5>
+                    <div class="hurt"><img src="../images/hurt.png" alt=""/></div>
+                </div>
+                <!--英雄头像部分 -->
+            </div>
+        </div>
+    </div>
+        <div class="heroIntroduceLh hero12">
+            <div class="heroImgLh">
+                <img src="../images/heroPhoto/15.png" class="heroLh">
+            </div>
+            <!--英雄详情-->
+            <div class="mainContentLh">
+                <div class="detailsLh">
+                    <h3 class="affectNameLh">凋零法师</h3>
+                    <h3 class="nameLh">巫诺瓿</h3>
+                    <h4>人物背景</h4>
+                    <p>巫诺瓦是圣光法师团的首席指挥官，她面对黑骑军团的大军压境也毫无惧色，是许多人心目中的传奇。第三次史诗战役中，法师团在黑骑潮水般的不断冲锋中战败，巫诺瓦一直战斗到最后一刻。对圣光军团来说，她是一个英雄，可没人知道，她被地底军团复活，成为了自己最厌恶的亡灵。</p>
+                    <h4>技能</h4>
+                    <ul class="skillLh">
+                        <li >
+                            <a href="javascript:;">
+                                <img src="../images/skill/150001.png" />
+                                <em style = "display:block;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>寒霜侵袭</span>
+                            </a>
+                            <p>对敌方全体造成210%+139点魔法伤害，降低魔抗16点，持续12秒。</p>
+                        </li>
+                        <li >
+                            <a href="javascript:;">
+                                <img src="../images/skill/150002.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>冰霜打击</span>
+                            </a>
+                            <p style = "display:none;">对当前目标造成115%+98点魔法伤害，并降低魔法抗性23%，持续12秒</p>
+                        </li>
+                        <li class=".clearfix">
+                            <a href="javascript:;">
+                                <img src="../images/skill/150003.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>连环霜冻</span>
+                            </a>
+                            <p style = "display:none;">对目标造成4次弹射，每次造成120%+117点魔法伤害，并冰冻2秒。</p>
+                        </li>
+                        <li class=".clearfix">
+                            <a href="javascript:;">
+                                <img src="../images/skill/150004.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>冰冷之环</span>
+                            </a>
+                            <p style = "display:none;">光环：减低所有敌人的魔法抗性12.3点。</p>
+                        </li>
+                    </ul>
+                    <div class="resultLh">
+                        <h5>类型&nbsp;&nbsp;<span>辅助</span></h5>
+                        <h5>射程&nbsp;&nbsp;<span>远</span></h5>
+                        <h5>羁绊&nbsp;&nbsp;<span>全体魔法强度+2.0%</span></h5>
+                        <div class="hurt"><img src="../images/hurt.png" alt=""/></div>
+                    </div>
+                    <!--英雄头像部分 -->
+                </div>
+            </div>
+        </div>
+        <div class="heroIntroduceLh hero13">
+            <div class="heroImgLh">
+                <img src="../images/heroPhoto/16.png" class="heroLh">
+            </div>
+            <!--英雄详情-->
+            <div class="mainContentLh">
+                <div class="detailsLh">
+                    <h3 class="affectNameLh">禁默法师</h3>
+                    <h3 class="nameLh">贝肯</h3>
+                    <h4>人物背景</h4>
+                    <p>贝肯是精灵王庭议会中唯一非贵族血统出身的议员，但是没人敢议论他的出身，哪怕是在他背后。即使纵观精灵族历史，像他这样展现出极高魔法天赋的人也是少数。所有人都称赞他优异且彬彬有礼，所有人都清楚他即使比现在更优异十倍也无法到达更高的地位——那么，优异一百倍也许可以？</p>
+                    <h4>技能</h4>
+                    <ul class="skillLh">
+                        <li >
+                            <a href="javascript:;">
+                                <img src="../images/skill/160001.png" />
+                                <em style = "display:block;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>静默领域</span>
+                            </a>
+                            <p>对敌方全体造成每秒100%+107点魔法伤害，并附带沉默效果（无法被驱散），持续10秒</p>
+                        </li>
+                        <li >
+                            <a href="javascript:;">
+                                <img src="../images/skill/160002.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>无声祷告</span>
+                            </a>
+                            <p style = "display:none;">对目标造成117点魔法伤害，并沉默5秒</p>
+                        </li>
+                        <li class=".clearfix">
+                            <a href="javascript:;">
+                                <img src="../images/skill/160003.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>禁言</span>
+                                <p style = "display:none;">对敌人释放，沉默目标并使其受到的魔法伤害增加，持续10秒。</p>
+                            </a>
+                        </li>
+                        <li class=".clearfix">
+                            <a href="javascript:;">
+                                <img src="../images/skill/160004.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>反制冲击</span>
+                            </a>
+                            <p style = "display:none;">对目标造成155%+123点魔法伤害。</p>
+                        </li>
+                    </ul>
+                    <div class="resultLh">
+                        <h5>类型&nbsp;&nbsp;<span>输出</span></h5>
+                        <h5>射程&nbsp;&nbsp;<span>远</span></h5>
+                        <h5>羁绊&nbsp;&nbsp;<span>全体魔法强度+2.0%</span></h5>
+                        <div class="hurt"><img src="../images/hurt.png" alt=""/></div>
+                    </div>
+                    <!--英雄头像部分 -->
+                </div>
+            </div>
+        </div>
+        <div class="heroIntroduceLh hero14">
+            <div class="heroImgLh">
+                <img src="../images/heroPhoto/5.png" class="heroLh">
+            </div>
+            <!--英雄详情-->
+            <div class="mainContentLh">
+                <div class="detailsLh">
+                    <h3 class="affectNameLh">凋零法师</h3>
+                    <h3 class="nameLh">巫诺瓿</h3>
+                    <h4>人物背景</h4>
+                    <p>巫诺瓦是圣光法师团的首席指挥官，她面对黑骑军团的大军压境也毫无惧色，是许多人心目中的传奇。第三次史诗战役中，法师团在黑骑潮水般的不断冲锋中战败，巫诺瓦一直战斗到最后一刻。对圣光军团来说，她是一个英雄，可没人知道，她被地底军团复活，成为了自己最厌恶的亡灵。</p>
+                    <h4>技能</h4>
+                    <ul class="skillLh">
+                        <li >
+                            <a href="javascript:;">
+                                <img src="../images/skill/50001.png" />
+                                <em style = "display:block;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>寒霜侵袭</span>
+                            </a>
+                            <p>对敌方全体造成210%+139点魔法伤害，降低魔抗16点，持续12秒。</p>
+                        </li>
+                        <li >
+                            <a href="javascript:;">
+                                <img src="../images/skill/50002.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>冰霜打击</span>
+                            </a>
+                            <p style = "display:none;">对当前目标造成115%+98点魔法伤害，并降低魔法抗性23%，持续12秒</p>
+                        </li>
+                        <li class=".clearfix">
+                            <a href="javascript:;">
+                                <img src="../images/skill/50003.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>连环霜冻</span>
+                            </a>
+                            <p style = "display:none;">对目标造成4次弹射，每次造成120%+117点魔法伤害，并冰冻2秒。</p>
+                        </li>
+                        <li class=".clearfix">
+                            <a href="javascript:;">
+                                <img src="../images/skill/50004.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>冰冷之环</span>
+                            </a>
+                            <p style = "display:none;">光环：减低所有敌人的魔法抗性12.3点。</p>
+                        </li>
+                    </ul>
+                    <div class="resultLh">
+                        <h5>类型&nbsp;&nbsp;<span>辅助</span></h5>
+                        <h5>射程&nbsp;&nbsp;<span>远</span></h5>
+                        <h5>羁绊&nbsp;&nbsp;<span>全体魔法强度+2.0%</span></h5>
+                        <div class="hurt"><img src="../images/hurt.png" alt=""/></div>
+                    </div>
+                    <!--英雄头像部分 -->
+                </div>
+            </div>
+        </div>
+        <div class="heroIntroduceLh hero15">
+            <div class="heroImgLh">
+                <img src="../images/heroPhoto/3.png" class="heroLh">
+            </div>
+            <!--英雄详情-->
+            <div class="mainContentLh">
+                <div class="detailsLh">
+                    <h3 class="affectNameLh">禁默法师</h3>
+                    <h3 class="nameLh">贝肯</h3>
+                    <h4>人物背景</h4>
+                    <p>贝肯是精灵王庭议会中唯一非贵族血统出身的议员，但是没人敢议论他的出身，哪怕是在他背后。即使纵观精灵族历史，像他这样展现出极高魔法天赋的人也是少数。所有人都称赞他优异且彬彬有礼，所有人都清楚他即使比现在更优异十倍也无法到达更高的地位——那么，优异一百倍也许可以？</p>
+                    <h4>技能</h4>
+                    <ul class="skillLh">
+                        <li >
+                            <a href="javascript:;">
+                                <img src="../images/skill/30001.png" />
+                                <em style = "display:block;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>静默领域</span>
+                            </a>
+                            <p>对敌方全体造成每秒100%+107点魔法伤害，并附带沉默效果（无法被驱散），持续10秒</p>
+                        </li>
+                        <li >
+                            <a href="javascript:;">
+                                <img src="../images/skill/30002.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>无声祷告</span>
+                            </a>
+                            <p style = "display:none;">对目标造成117点魔法伤害，并沉默5秒</p>
+                        </li>
+                        <li class=".clearfix">
+                            <a href="javascript:;">
+                                <img src="../images/skill/30003.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>禁言</span>
+                            </a>
+                            <p style = "display:none;">对敌人释放，沉默目标并使其受到的魔法伤害增加，持续10秒。</p>
+                        </li>
+                        <li class=".clearfix">
+                            <a href="javascript:;">
+                                <img src="../images/skill/30004.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>反制冲击</span>
+                            </a>
+                            <p style = "display:none;">对目标造成155%+123点魔法伤害。</p>
+                        </li>
+                    </ul>
+                    <div class="resultLh">
+                        <h5>类型&nbsp;&nbsp;<span>输出</span></h5>
+                        <h5>射程&nbsp;&nbsp;<span>远</span></h5>
+                        <h5>羁绊&nbsp;&nbsp;<span>全体魔法强度+2.0%</span></h5>
+                        <div class="hurt"><img src="../images/hurt.png" alt=""/></div>
+                    </div>
+                    <!--英雄头像部分 -->
+                </div>
+            </div>
+        </div>
+        <div class="heroIntroduceLh hero16">
+            <div class="heroImgLh">
+                <img src="../images/heroPhoto/2.png" class="heroLh">
+            </div>
+            <!--英雄详情-->
+            <div class="mainContentLh">
+                <div class="detailsLh">
+                    <h3 class="affectNameLh">凋零法师</h3>
+                    <h3 class="nameLh">巫诺瓿</h3>
+                    <h4>人物背景</h4>
+                    <p>巫诺瓦是圣光法师团的首席指挥官，她面对黑骑军团的大军压境也毫无惧色，是许多人心目中的传奇。第三次史诗战役中，法师团在黑骑潮水般的不断冲锋中战败，巫诺瓦一直战斗到最后一刻。对圣光军团来说，她是一个英雄，可没人知道，她被地底军团复活，成为了自己最厌恶的亡灵。</p>
+                    <h4>技能</h4>
+                    <ul class="skillLh">
+                        <li >
+                            <a href="javascript:;">
+                                <img src="../images/skill/20001.png" />
+                                <em style = "display:block;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>寒霜侵袭</span>
+                            </a>
+                            <p>对敌方全体造成210%+139点魔法伤害，降低魔抗16点，持续12秒。</p>
+                        </li>
+                        <li >
+                            <a href="javascript:;">
+                                <img src="../images/skill/20002.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>冰霜打击</span>
+                            </a>
+                            <p style = "display:none;">对当前目标造成115%+98点魔法伤害，并降低魔法抗性23%，持续12秒</p>
+                        </li>
+                        <li class=".clearfix">
+                            <a href="javascript:;">
+                                <img src="../images/skill/20003.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>连环霜冻</span>
+                            </a>
+                            <p style = "display:none;">对目标造成4次弹射，每次造成120%+117点魔法伤害，并冰冻2秒。</p>
+                        </li>
+                        <li class=".clearfix">
+                            <a href="javascript:;">
+                                <img src="../images/skill/20004.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>冰冷之环</span>
+                            </a>
+                            <p style = "display:none;">光环：减低所有敌人的魔法抗性12.3点。</p>
+                        </li>
+                    </ul>
+                    <div class="resultLh">
+                        <h5>类型&nbsp;&nbsp;<span>辅助</span></h5>
+                        <h5>射程&nbsp;&nbsp;<span>远</span></h5>
+                        <h5>羁绊&nbsp;&nbsp;<span>全体魔法强度+2.0%</span></h5>
+                        <div class="hurt"><img src="../images/hurt.png" alt=""/></div>
+                    </div>
+                    <!--英雄头像部分 -->
+                </div>
+            </div>
+        </div>
+        <div class="heroIntroduceLh hero17">
+            <div class="heroImgLh">
+                <img src="../images/heroPhoto/3.png" class="heroLh">
+            </div>
+            <!--英雄详情-->
+            <div class="mainContentLh">
+                <div class="detailsLh">
+                    <h3 class="affectNameLh">禁默法师</h3>
+                    <h3 class="nameLh">贝肯</h3>
+                    <h4>人物背景</h4>
+                    <p>贝肯是精灵王庭议会中唯一非贵族血统出身的议员，但是没人敢议论他的出身，哪怕是在他背后。即使纵观精灵族历史，像他这样展现出极高魔法天赋的人也是少数。所有人都称赞他优异且彬彬有礼，所有人都清楚他即使比现在更优异十倍也无法到达更高的地位——那么，优异一百倍也许可以？</p>
+                    <h4>技能</h4>
+                    <ul class="skillLh">
+                        <li >
+                            <a href="javascript:;">
+                                <img src="../images/skill/30001.png" />
+                                <em style = "display:block;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>静默领域</span>
+                            </a>
+                            <p>对敌方全体造成每秒100%+107点魔法伤害，并附带沉默效果（无法被驱散），持续10秒</p>
+                        </li>
+                        <li >
+                            <a href="javascript:;">
+                                <img src="../images/skill/30002.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>无声祷告</span>
+                            </a>
+                            <p style = "display:none;">对目标造成117点魔法伤害，并沉默5秒</p>
+                        </li>
+                        <li class=".clearfix">
+                            <a href="javascript:;">
+                                <img src="../images/skill/30003.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>禁言</span>
+                            </a>
+                            <p style = "display:none;">对敌人释放，沉默目标并使其受到的魔法伤害增加，持续10秒。</p>
+                        </li>
+                        <li class=".clearfix">
+                            <a href="javascript:;">
+                                <img src="../images/skill/30004.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>反制冲击</span>
+                            </a>
+                            <p style = "display:none;">对目标造成155%+123点魔法伤害。</p>
+                        </li>
+                    </ul>
+                    <div class="resultLh">
+                        <h5>类型&nbsp;&nbsp;<span>输出</span></h5>
+                        <h5>射程&nbsp;&nbsp;<span>远</span></h5>
+                        <h5>羁绊&nbsp;&nbsp;<span>全体魔法强度+2.0%</span></h5>
+                        <div class="hurt"><img src="../images/hurt.png" alt=""/></div>
+                    </div>
+                    <!--英雄头像部分 -->
+                </div>
+            </div>
+        </div>
+        <div class="heroIntroduceLh hero18">
+            <div class="heroImgLh">
+                <img src="../images/heroPhoto/4.png" class="heroLh">
+            </div>
+            <!--英雄详情-->
+            <div class="mainContentLh">
+                <div class="detailsLh">
+                    <h3 class="affectNameLh">凋零法师</h3>
+                    <h3 class="nameLh">巫诺瓿</h3>
+                    <h4>人物背景</h4>
+                    <p>巫诺瓦是圣光法师团的首席指挥官，她面对黑骑军团的大军压境也毫无惧色，是许多人心目中的传奇。第三次史诗战役中，法师团在黑骑潮水般的不断冲锋中战败，巫诺瓦一直战斗到最后一刻。对圣光军团来说，她是一个英雄，可没人知道，她被地底军团复活，成为了自己最厌恶的亡灵。</p>
+                    <h4>技能</h4>
+                    <ul class="skillLh">
+                        <li >
+                            <a href="javascript:;">
+                                <img src="../images/skill/40001.png" />
+                                <em style = "display:block;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>寒霜侵袭</span>
+                            </a>
+                            <p>对敌方全体造成210%+139点魔法伤害，降低魔抗16点，持续12秒。</p>
+                        </li>
+                        <li >
+                            <a href="javascript:;">
+                                <img src="../images/skill/40002.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>冰霜打击</span>
+                            </a>
+                            <p style = "display:none;">对当前目标造成115%+98点魔法伤害，并降低魔法抗性23%，持续12秒</p>
+                        </li>
+                        <li class=".clearfix">
+                            <a href="javascript:;">
+                                <img src="../images/skill/40003.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>连环霜冻</span>
+                            </a>
+                            <p style = "display:none;">对目标造成4次弹射，每次造成120%+117点魔法伤害，并冰冻2秒。</p>
+                        </li>
+                        <li class=".clearfix">
+                            <a href="javascript:;">
+                                <img src="../images/skill/40004.png" />
+                                <em style = "display:none;"><img src="../images/sj_e31364f.png" alt=""/></em>
+                                <span>冰冷之环</span>
+                            </a>
+                            <p style = "display:none;">光环：减低所有敌人的魔法抗性12.3点。</p>
+                        </li>
+                    </ul>
+                    <div class="resultLh">
+                        <h5>类型&nbsp;&nbsp;<span>辅助</span></h5>
+                        <h5>射程&nbsp;&nbsp;<span>远</span></h5>
+                        <h5>羁绊&nbsp;&nbsp;<span>全体魔法强度+2.0%</span></h5>
+                        <div class="hurt"><img src="../images/hurt.png" alt=""/></div>
+                    </div>
+                    <!--英雄头像部分 -->
+                </div>
+            </div>
+        </div>
+        <!--英雄头像-->
+        <div class="optionLh">
+            <div class="selectLh">
+                <a href="javascript:;" class="btnLeftLh"></a>
+                <a href="javascript:;" class="btnRightLh"></a>
+                <div class="containerLh">
+                    <div class="headPhotoLh" id="obj">
+                        <ul>
+                            <li>
+                                <a href="javascript:;" class="heroPhotosLh">
+                                    <img id="heroPhotoLhOne"  src="../images/headportrait/dark/1.png"/>
+                                    <img id="heroPhotoLhTow"  src="../images/headportrait/1h.png"/>
+                                    <i class="searchImg"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="heroPhotosLh">
+                                    <img id="heroPhotoLhOne" src="..//images/headportrait/dark/2.png"/>
+                                    <img id="heroPhotoLhTow" src="../images/headportrait/2h.png"/>
+                                    <i class="searchImg"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="heroPhotosLh">
+                                    <img id="heroPhotoLhOne" src="../images/headportrait/dark/3.png"/>
+                                    <img id="heroPhotoLhTow" src="../images/headportrait/3h.png"/>
+                                    <i  class="searchImg"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="heroPhotosLh">
+                                    <img id="heroPhotoLhOne" src="../images/headportrait/dark/4.png"/>
+                                    <img id="heroPhotoLhTow" src="../images/headportrait/4h.png"/>
+                                    <i  class="searchImg"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="heroPhotosLh">
+                                    <img id="heroPhotoLhOne" src="../images/headportrait/dark/5.png"/>
+                                    <img id="heroPhotoLhTow" src="../images/headportrait/5h.png"/>
+                                    <i  class="searchImg"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="heroPhotosLh">
+                                    <img id="heroPhotoLhOne"  src="../images/headportrait/dark/6.png"/>
+                                    <img id="heroPhotoLhTow"  src="../images/headportrait/6h.png"/>
+                                    <i  class="searchImg"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="heroPhotosLh">
+                                    <img id="heroPhotoLhOne" src="../images/headportrait/dark/7.png"/>
+                                    <img id="heroPhotoLhTow" src="../images/headportrait/7h.png"/>
+                                    <i  class="searchImg"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="heroPhotosLh">
+                                    <img id="heroPhotoLhOne" src="../images/headportrait/dark/8.png"/>
+                                    <img id="heroPhotoLhTow"  src="../images/headportrait/8h.png"/>
+                                    <i  class="searchImg"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="heroPhotosLh">
+                                    <img id="heroPhotoLhOne" src="../images/headportrait/dark/9.png"/>
+                                    <img id="heroPhotoLhTow"  src="../images/headportrait/9h.png"/>
+                                    <i  class="searchImg"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="javascript:;" class="heroPhotosLh">
+                                    <img id="heroPhotoLhOne"src="../images/headportrait/dark/10.png"/>
+                                    <img id="heroPhotoLhTow"  src="../images/headportrait/10h.png"/>
+                                    <i  class="searchImg"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="heroPhotosLh">
+                                    <img id="heroPhotoLhOne"  src="..//images/headportrait/dark/14.png"/>
+                                    <img id="heroPhotoLhTow"   src="../images/headportrait/14h.png"/>
+                                    <i  class="searchImg"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="heroPhotosLh">
+                                    <img id="heroPhotoLhOne"  src="../images/headportrait/dark/15.png"/>
+                                    <img id="heroPhotoLhTow"  src="../images/headportrait/15h.png"/>
+                                    <i  class="searchImg"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="heroPhotosLh">
+                                    <img id="heroPhotoLhOne" src="../images/headportrait/dark/16.png"/>
+                                    <img id="heroPhotoLhTow"  src="../images/headportrait/16h.png"/>
+                                    <i class="searchImg"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="heroPhotosLh">
+                                    <img id="heroPhotoLhOne"  src="../images/headportrait/dark/2.png"/>
+                                    <img id="heroPhotoLhTow"  src="../images/headportrait/2h.png"/>
+                                    <i class="searchImg"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="heroPhotosLh">
+                                    <img id="heroPhotoLhOne"  src="../images/headportrait/dark/5.png"/>
+                                    <img id="heroPhotoLhTow"  src="../images/headportrait/5h.png"/>
+                                    <i  class="searchImg"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="heroPhotosLh">
+                                    <img id="heroPhotoLhOne" src="../images/headportrait/dark/7.png"/>
+                                    <img id="heroPhotoLhTow" src="../images/headportrait/7h.png"/>
+                                    <i  class="searchImg"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="heroPhotosLh">
+                                    <img id="heroPhotoLhOne" src="../images/headportrait/dark/3.png"/>
+                                    <img id="heroPhotoLhTow"  src="../images/headportrait/3h.png"/>
+                                    <i  class="searchImg"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="heroPhotosLh">
+                                    <img id="heroPhotoLhOne" src="../images/headportrait/dark/8.png"/>
+                                    <img id="heroPhotoLhTow" src="../images/headportrait/8h.png"/>
+                                    <i  class="searchImg"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--脚部-->
+    <div class="fotter">
+        <div class="w">
+            <!--微信等图标的位置-->
+            <div class="icon">
+                <ul>
+                    <li>分享到:</li>
+                    <li class="weixin">
+                        <a href="#"><i class="myIconfont">&#xe64d;</i>微信</a>
+                        <span>分享到微信二维码</span>
+                    </li>
+                    <li class="yixin">
+                        <a href="#"><i  class="myIconfont">&#xe6b4;</i>易信</a>
+                        <span>分享到易信</span>
+                    </li>
+                    <li class="weibo">
+                        <a href="#"><i class="myIconfont">&#xe61a;</i>微博</a>
+                        <span>分享到微博</span>
+                    </li>
+                    <li class="kongjian">
+                        <a href="#"><i class="myIconfont">&#xe661;</i>qq空间</a>
+                        <span>分享到qq空间</span>
+                    </li>
+                    <li class="noname">
+                        <a href="#"> <i  class="myIconfont">&#xe60a;</i>腾讯微博</a>
+                        <span>分享到腾讯微博</span>
+                    </li>
+                    <li class="mores">
+                        <a href="#"><i class="myIconfont">&#xe60f;</i>更多</a>
+                            <span class="moresAll">
+                                <a href="#"  class="renren"> <i  class="myIconfont">&#xe654;</i>人人网</a>
+                                <a href="#" class="qqfrends"> <i  class="myIconfont">&#xe627;</i>qq好友</a>
+                                <a href="#" class="douban"> <i  class="myIconfont">&#xe655;</i>豆瓣</a>
+                                <a href="#" class="baidutieba"> <i  class="myIconfont">&#xe6b0;</i>百度贴吧</a>
+                            </span>
+                    </li>
+                </ul>
+            </div>
+            <!--网易等各种链接-->
+            <div class="navnice">
+                <p class="nave-top"><a href="#" class="wangyi"></a><a  class="borde"></a><a href="#" class="game"></a></p>
+                <p class="nav-center"><a href="#">公司简介</a><span>-</span><a href="#">客户服务</a><span>-</span><a href="#">相关法律</a><span>-</span><a href="#">网易游戏</a><span>-</span><a href="#">联系我们</a><span>-</span><a href="#">商务合作</a><span>-</span><a href="#">加入我们</a><span>-</span><a href="#">用户协议</a></p>
+                <p class="nav-bottom"><span> 网易公司版权所有 ©1997-2017</span><a href="#">点击查看家长监护工程 ></a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(function(){
+        var list = $(".icon").find("li");
+        list.hover(function(){
+//            $(this).find("span").css("display","block");
+            $(this).find("span").show();
+        },function(){
+            $(this).find("span").hide();
+        });
+    });
+</script>
+</div>
+
+</body>
+</html>

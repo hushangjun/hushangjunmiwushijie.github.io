@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>fotter</title>
+    <link rel="stylesheet" href="../css/public.css"/>
+    <link rel="stylesheet" href="../css/fotter.css"/>
+    <script src="../js/jquery-1.12.2.js"></script>
+</head>
+<body>
+<!--//占位置的-->
+    <div class="box"></div>
+        <div class="fotter">
+            <div class="w">
+                <!--微信等图标的位置-->
+                <div class="icon">
+                    <ul>
+                        <li>分享到:</li>
+                        <li class="weixin">
+                            <a href="#"><i class="myIconfont">&#xe64d;</i>微信</a>
+                            <span>分享到微信二维码</span>
+                        </li>
+                        <li class="yixin">
+                            <a href="#"><i  class="myIconfont">&#xe6b4;</i>易信</a>
+                            <span>分享到易信</span>
+                        </li>
+                        <li class="weibo">
+                            <a href="#"><i class="myIconfont">&#xe61a;</i>微博</a>
+                            <span>分享到微博</span>
+                        </li>
+                        <li class="kongjian">
+                            <a href="#"><i class="myIconfont">&#xe661;</i>qq空间</a>
+                            <span>分享到qq空间</span>
+                        </li>
+                        <li class="noname">
+                            <a href="#"> <i  class="myIconfont">&#xe60a;</i>腾讯微博</a>
+                            <span>分享到腾讯微博</span>
+                        </li>
+                        <li class="mores">
+                            <a href="#"><i class="myIconfont">&#xe60f;</i>更多</a>
+                            <span class="moresAll">
+                                <a href="#"  class="renren"> <i  class="myIconfont">&#xe654;</i>人人网</a>
+                                <a href="#" class="qqfrends"> <i  class="myIconfont">&#xe627;</i>qq好友</a>
+                                <a href="#" class="douban"> <i  class="myIconfont">&#xe655;</i>豆瓣</a>
+                                <a href="#" class="baidutieba"> <i  class="myIconfont">&#xe6b0;</i>百度贴吧</a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <!--网易等各种链接-->
+                <div class="navnice">
+                    <p class="nave-top"><a href="#" class="wangyi"></a><a  class="borde"></a><a href="#" class="game"></a></p>
+                    <p class="nav-center"><a href="#">公司简介</a><span>-</span><a href="#">客户服务</a><span>-</span><a href="#">相关法律</a><span>-</span><a href="#">网易游戏</a><span>-</span><a href="#">联系我们</a><span>-</span><a href="#">商务合作</a><span>-</span><a href="#">加入我们</a><span>-</span><a href="#">用户协议</a></p>
+                    <p class="nav-bottom"><span> 网易公司版权所有 ©1997-2017</span><a href="#">点击查看家长监护工程 ></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    $(function(){
+        var list = $(".icon").find("li");
+        list.hover(function(){
+//            $(this).find("span").css("display","block");
+            $(this).find("span").show();
+        },function(){
+            $(this).find("span").hide();
+        });
+    });
+</script>
+</body>
+</html>

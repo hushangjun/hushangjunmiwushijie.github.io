@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>迷雾世界</title>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/miwushijie.css"/>
+    <script src="js/miwushijie.js"></script>
+    <script src="js/jquery-1.12.2.js"></script>
+    <script>
+        $(function(){
+//            网易顶部部分  鼠标移入背景变化
+            $("#huTopbar").find(".bianhua").hover(function(){
+                $(this).css({"backgroundColor":"#ccc","borderBottom":"3px solid #bc2e2e"})
+            },function(){
+                $(this).css({"backgroundColor":"#fbfbfb","borderBottom":""})
+            })
+//                顶部右边自动轮播字体
+            var index = 0;
+            setInterval(function() {
+                if(index==2){
+                    $("#upDown").css({"top":0})
+                    index=-1
+                }
+                index++
+                $("#upDown").animate({"top": -52*index}, 500)
+               console.log(index)
+            }, 1000)
+
+
+//            迷雾头部关注微信部分
+            $("#weixin").hover(function(){
+                $("#weixin .Huweixincode").css({"display":"block",})
+        },function(){
+                $("#weixin .Huweixincode").css({"display":"none"})
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <!--头部 header-->
+        <!--顶条-->
+    <div class="huTopbar" id="huTopbar">
+        <!--版心部分1000px-->
+        <div class="w clearfix">
+            <a href="#" class="huWangyiLogo"></a>
+            <!--注册充值-->
+            <div class="huTopbar_mid">
+                <a href="" class="bianhua">注册账号</a>
+                <a href="" class="bianhua">安卓充值</a>
+
+            </div>
+            <!--充值新闻-->
+            <div class="huTopbar_right">
+                <ul id="upDown">
+                    <li><a href="#" class="bianhua">领取网易严选宝箱</a></li>
+                    <li><a href="#" class="bianhua">安卓充值9.8折</a></li>
+                    <li><a href="#" class="bianhua">领取网易严选宝箱</a></li>
+
+                </ul>
+            </div>
+            <!--网页游戏全目录-->
+            <div class="huTopbar_menu">
+                <span class="bianhua">网易游戏全目录 <i class="myiconfont">&#xe8f9;</i></span>
+            </div>
+            <div class="allmenu">
+                <ul class="menuTitle">
+                    <li class="menuTitle_c1">手机游戏</li>
+                    <li class="menuTitle_c2">客户端游戏</li>
+                    <li class="menuTitle_c4">游戏辅助</li>
+                </ul>
+                <ul class="youxiName">
+                    <li>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <!--迷雾头部-->
+    <div class="huNavWarp clearfix">
+        <div class="huLogoName">
+            <a href="" class="huMiyiLogo">迷雾世界</a>
+            <p>
+                迷雾世界<br/>
+                网易策略探索MMO手游
+            </p>
+        </div>
+        <div class="huNavWarpTit">
+            <ul>
+                <li><a href="#"><i class="myiconfont">&#xe71f;</i>官网首页</a></li>
+                <li><a href="#"><i class="myiconfont">&#xe71f;</i>新闻公告</a></li>
+                <li><a href="#"><i class="myiconfont">&#xe71f;</i>玩法特色</a></li>
+                <li><a href="#"><i class="myiconfont">&#xe71f;</i>英雄殿堂</a></li>
+                <li><a href="#"><i class="myiconfont">&#xe71f;</i>游戏资料</a></li>
+                <li><a href="#"><i class="myiconfont">&#xe71f;</i>游戏论坛</a></li>
+            </ul>
+        </div>
+        <div class="guanzghu">
+            <a href="javascript:void(0)" class="weixin" id="weixin">
+                <div class="Huweixincode">
+                    <img src="images/wx_code_fb7495e.jpg" alt=""/>
+                    <p>扫描二维码<br>关注微信公众号<br>
+                        <span>wymwsj</span>
+                    </p>
+                </div>
+            </a>
+
+            <p>关注官方公众号 <br/>
+                海量活动抢先看</p>
+        </div>
+        <div class="line"></div>
+    </div>
+    <!--内容区域 main-->
+
+    <div class="main"></div>
+
+
+
+
+
+
+    <!--尾部footer-->
+   <div class="HuFooter">
+       <div class="fengxiang"></div>
+       <div class="footerBottom">
+               <div class="bleft"><a href="#" class="netest"></a><a href="#" class="youxi"></a></div>
+               <div class="br">
+                   <p class="righttop"><a href="">公司简介</a><span>-</span><a href="">客户服务</a><span>-</span><a href="">相关法律</a><span>-</span><a href="">网易游戏</a><span>-</span><a href=""> 联系我们</a><a
+                           href="">商务合作</a><span>-</span><a href="">加入我们</a></p>
+                   <span> 网易公司版权所有 ©1997-2017</span> <a href="#" class="Hujianhu fr">点击查看家长监护工程<i class="myiconfont fr">&#xe8f1;</i></a>
+               </div>
+       </div>
+   </div>
+
+
+</body>
+</html>

@@ -1,0 +1,652 @@
+
+
+/*头部顶条部分*/
+
+.huTopbar{
+    width: 1349px;
+    height: 55px;
+    background-color: #fbfbfb;
+}
+.w{
+    height: 55px;
+    /*background-color: #ccc;*/
+    position: relative;
+    overflow: hidden;
+}
+.huWangyiLogo{
+    display:  block;
+    float: left;
+    width: 133px;
+    height: 44px;
+    margin-top: 5px;
+    background: url("../image2/huWangyiLogo.png") ;
+}
+.huTopbar_mid{
+    width: 536px;
+    height: 52px;
+    line-height: 52px;
+    float: left;
+    margin-left:100px;
+}
+.huTopbar_mid a{
+    display: block;
+    text-align: center;
+    float: right;
+    width: 72px;
+    height: 52px;
+}
+/*充值游戏目录*/
+.huTopbar_menu{
+    float: right;
+    width: 123px;
+    height: 55px;
+    margin-right: 6px;
+}
+.huTopbar_menu span{
+    display: block;
+    width: 110px;
+    height: 52px;
+    text-align: center;
+    /*margin-top: 18px;*/
+    line-height: 52px;
+    padding-left: 13px;
+    color: #bc2e2e;
+}
+.huTopbar_menu span i{
+    display: block;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    float: right;
+    /*background-color: #fff;*/
+}
+/*隐藏的目录*/
+.allmenu{
+    position: absolute;
+    z-index: 100;
+    top: 55px;
+    width: 1000px;
+    background: #fdfefe;
+    border-top: 1px solid #ececec;
+    margin: 0;
+}
+.allmenu .menuTitle{
+    line-height: 39px;
+    color: #bc2e2e;
+    display: block;
+    width: 100%;
+    height: 39px;
+    font-size: 14px;
+    text-indent: 20px;
+    background: #f7f7f8;
+    overflow: hidden;
+    clear: both;
+}
+.menuTitle li{
+    float: left;
+    border-right: 1px solid #eee;
+    vertical-align: top;
+}
+.menuTitle_c1{
+    width: 247px;
+}
+.menuTitle_c2{
+    width: 603px;
+}
+.menuTitle_c3{
+    width: 147px;
+    float: right;
+}
+.huTopbar_right{
+    float: right;
+    width: 100px;
+    height: 55px;
+    text-align: center;
+    overflow: hidden;
+}
+#upDown{
+    position: absolute;
+    height: 300%;
+}
+.huTopbar_right a{
+    display: block;
+    height: 52px;
+    line-height: 52px;
+    font-size: 12px;
+}
+
+/*背景图片*/
+.gmp2 {
+    background: url(../images/ny_bg_440a955.jpg) no-repeat;
+}
+/*头部*/
+/*迷雾头部*/
+.huNavWarp{
+    width: 1349px;
+    height: 72px;
+    color: #fff;
+    font-size: 14px;
+    /*background-color: #ccc;*/
+    position: relative;
+
+}
+/*logo*/
+.huLogoName{
+    width: 249px;
+    height: 81px;
+    /*background-color: #666666;*/
+    margin-top: 22px;
+    margin-left: 37px;
+    float: left;
+}
+.huNavWarp .huMiyiLogo{
+    /*display: block;*/
+    float: left;
+    width: 77px;
+    height: 77px;
+    background: url(../image2/huMiWuLogo.png) no-repeat;
+    background-size: 100% 100%;
+    text-indent: -5000px;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 2px solid #fff;
+
+}
+.huLogoName p{
+    float: left;
+    margin: 5px 0 0 17px;
+    line-height: 20px;
+}
+.huNavWarpTit{
+    float: left;
+    width: 708px;
+    height: 74px;
+    margin-left: 188px ;
+    height: 74px;
+}
+.huNavWarpTit li{
+    float: left;
+    width: 118px;
+    height: 73px;
+    line-height: 73px;
+    /*padding-right: 22px;*/
+
+}
+
+.huNavWarpTit .myiconfont{
+    display: block;
+    width: 12px;
+    height: 12px;
+    font-size: 12px;
+    margin-right: 8px;
+    float: left;
+}
+.huNavWarpTit li a{
+    display: block;
+    width: 80px;
+    height: 72px;
+
+    color: #fff;
+}
+.huNavWarpTit li a:hover{
+    color: #e8c67e;
+    border-bottom: 1px solid #e8c67e;
+}
+.guanzghu{
+    float: right;
+    width: 126.017px;
+    height: 36px;
+    margin: 21px 30px 0 10px;
+}
+
+.guanzghu a{
+    /*display: block;*/
+    position: relative;
+    z-index: 3;
+    width: 32px;
+    height: 33px;
+    float: left;
+    margin-right: 9px;
+    background: url(../image2/huMiwuHeader.png) 0 -254px;
+}
+
+.guanzghu p{
+    font-size: 12px;
+}
+.guanzghu .Huweixincode{
+    width: 151px;
+    height: 254px;
+    position: absolute;
+    top: -5px;
+    left: -47px;
+    display: none;
+    background: url("../image2/huMiwuHeader.png") no-repeat 0px 0px;
+}
+.guanzghu .Huweixincode img{
+    width: 123px;
+    display: block;
+    margin: 56px auto 0;
+}
+.guanzghu .Huweixincode p{
+    padding-left: 15px;
+    color: #666;
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 8px;
+}
+/*下面的白线*/
+.huNavWarp .line{
+    width: 1227px;
+    height: 9px;
+    background: url(../image2/huMiwuheaderLine.png) no-repeat;
+    position: absolute;
+    bottom: -4px;
+    left: 122px;
+    /*background-color: #55a532;*/
+}
+
+/*主体内容*/
+.gmpagecentent {
+    width: 1150px;
+    padding-top:74px;
+    padding-left:100px;
+    padding-right: 100px;
+
+}
+/*左边*/
+.gmp2_left{
+    padding:23px 32px 32px;
+    width: 168px;
+    height: 391px;
+    background-color: #fff;
+    float:left;
+}
+.gmp2_left .gmerweimabox{
+    border: 1px solid #6ca4e8;
+    width: 146px;
+    height: 146px;
+    padding: 12px;
+    position: relative;
+}
+.gmp2_left .gmerweimabox u {
+    position: absolute;
+    width: 170px;
+    border-top:1px solid #0b4790;
+    top:0;
+    left:0;
+}
+.gmp2_left .gmerweimabox img{
+    width: 148px;
+    height: 148px;
+}
+.gmp2_left .gmsao {
+    height: 42px;
+    line-height: 42px;
+    padding-left:25px;
+    background:url(../images/ny_arrow_7b6a895.png) no-repeat 0px center;
+}
+.gmp2_left .gmsao {
+    color:#000000;
+    font-size: 12px;
+}
+
+.gmp2_left .gmp2_left_pic {
+    padding-top:16px;
+    padding-bottom: 14px;
+    position: relative;
+}
+.gmp2_left .gmp2_left_pic_to a{
+    display: block;
+    width: 170px;
+    height: 51px;
+    background: url(../images/jinglingtu1.png) no-repeat -58px 0;
+    }
+.gmp2_left .gmp2_left_pic_bo a{
+    display: block;
+    width: 170px;
+    height: 51px;
+    background: url(../images/jinglingtu1.png) no-repeat -227px 0px;
+    margin-top:10px;
+    paddind :14px;
+}
+.gmp2_left .gmp2_left_other {
+
+    background: url(../images/ny_wx_bg_8aed099.png) no-repeat;
+}
+.gmp2_left .gmp2_left_other i{
+    float: left;
+    width: 28px;
+    height: 28px;
+}
+.gmp2_left .gmp2_left_other a {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    position: relative;
+}
+
+.gmp2_left .gmp2_left_other s {
+    display: none;
+    position: absolute;
+    width: 130px;
+    height: 203px;
+    background: url(../images/ny_wx_bg_8aed099.png) no-repeat ;
+    top:-2px;
+    left:-45px
+    }
+.gmp2_left .gmp2_left_other s img {
+    width: 108px;
+    height: 108px;
+    margin-top:50px ;
+    margin-left:11px;
+
+}
+.gmp2_left .gmp2_left_other span {
+    float:left;
+    padding-left:12px;
+}
+    /*右边*/
+.gmp2_right{
+    padding: 48px 70px;
+    width: 760px;
+    height: 825px;
+    background-color: #fff;
+    float:right;
+}
+/*右边上部内容*/
+.gmp2_tight_top {
+    padding-bottom: 16px;
+    border-bottom: 3px solid #efefef;
+
+}
+.gmp2_right .gmp2_right_left {
+    float:left;
+}
+.gmp2_right .gmp2_right_left h2{
+    color:#0b4790;
+    font-size: 28px;
+    font-weight: 900;
+    height: 42px;
+    line-height: 42px;
+}
+.gmp2_right .gmp2_right_left_bottom {
+    color:#999999;
+}
+.gmp2_right .gmp2_right_left_bottom > a{
+    color:#999999;
+}
+.gmp2_right .gmp2_right_left_bottom > a:hover {
+    text-decoration: underline;
+}
+.gmp2_right .gmp2_right_right{
+    padding-top:16px;
+    float:right;
+}
+.gmp2_right .gmp2_right_right li {
+    float:left;
+    width: 90px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 14px;
+    text-align: center;
+}
+.gmp2_right .gmp2_right_right li:first-child {
+    border: 1px solid #3283de;
+}
+.gmp2_right li a:hover {
+    color: #3283de;
+}
+.gmp2_right .gmp2_right_righta a:hover {
+    color :#0086b3;
+}
+/*右边中间内容*/
+.gmp2_right .gmp2_tight_center {
+    padding-top:10px;
+    width: 760px;
+    height: 625px;
+    overflow: hidden;
+    position: relative;
+}
+.gmp2_right .gmp2_tight_center .gm_ulpa {
+    width: 500%;
+    position: absolute;
+    left:0;
+}
+.gmp2_right .gmp2_tight_center ul {
+    width: 760px;
+    height: 635px;
+    float:left;
+}
+.gmp2_right .gmp2_tight_center li {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px dashed #999;
+}
+.gmp2_right .gmp2_tight_center a:hover{
+    color:#3283de;
+}
+.gmp2_right .gmp2_tight_center li span {
+    float:right;
+}
+/*右边底部内容*/
+.gmp2_right .gmp2_tight_bottompage {
+    padding:25px 0 0 100px;
+}
+.gmp2_right .gmp2_tight_bottompage ul {
+    line-height: 24px;
+    height: 24px;
+}
+.gmp2_right .gmp2_tight_bottompage li {
+    float:left;
+    margin-right:8px;
+}
+.gmp2_right .gmp2_tight_bottompage li a {
+    display: inline-block;
+    padding:0 8px;
+    text-align: center;
+    border:1px solid #000;
+    height: 24px;
+}
+.gmp2_right .gmp2_tight_bottompage li a:hover {
+    color:#0086b3;
+}
+.gmp2_right .gm_disnone {
+   visibility: hidden;
+}
+.gmp2_right .gm_blue {
+    background-color: #0086b3;
+    cursor: text;
+}
+.gmp2_right #gm_nextnone {
+    width: 102px;
+    height: 26px;
+    /*display: none;*/
+}
+.gmp2_tight_bottom_share {
+    position: relative;
+    padding-left:300px;
+    padding-top:30px;
+}
+.gmp2_tight_bottom_share a:hover {
+    color :#0086b3;
+}
+.gmp2_tight_bottom_share_more {
+    width: 198px;
+    height: 48px;
+    background: #fff;
+    padding:0px 5px ;
+    position: absolute;
+    top:20px;
+    right: 110px ;
+    display: none;
+}
+.gmp2_tight_bottom_share_more li {
+    float: left;
+    width: 99px;
+    padding-top: 2px;
+}
+.gmp2_tight_bottom_share_more .gm_ren {
+    display: inline-block;
+    width: 63px;
+    height: 22px;
+    line-height: 22px;
+    padding-left: 24px;
+    background:url(../images/icon.v5.png) no-repeat 0 -176px;
+}
+.gmp2_tight_bottom_share_more .gm_qqf {
+    display: inline-block;
+    width: 63px;
+    height: 22px;
+    line-height: 22px;
+    padding-left: 24px;
+    background:url(../images/icon.v5.png) no-repeat 0 -474px;
+}
+.gmp2_tight_bottom_share_more .gm_donban {
+    display: inline-block;
+    width: 63px;
+    height: 22px;
+    line-height: 22px;
+    padding-left: 24px;
+    background:url(../images/icon.v5.png) no-repeat 0 -250px;
+}
+.gmp2_tight_bottom_share_more .gm_baidutieb {
+    display: inline-block;
+    width: 63px;
+    height: 22px;
+    line-height: 22px;
+    padding-left: 24px;
+    background:url(../images/icon.v5.png) no-repeat 0 -450px;
+}
+/*尾部*/
+/**
+*赵天棋  2017-4-23
+*/
+/*用于占位置*/
+/*.box{*/
+    /*margin: 0 auto;*/
+    /*width:1453px;*/
+    /*height:100px;*/
+    /*overflow: hidden;*/
+    /*background-color: #007aff;*/
+/*}*/
+/*底部*/
+.fotter{
+    /*margin: 0 auto;*/
+    /*width:1453px;*/
+    height:190px;
+    /*overflow: hidden;*/
+    background: url(../images/123.jpg) ;
+    /*color: #ffffff;*/
+}
+.fotter a{
+    color: #ffffff;
+}
+
+.fotter .w{
+
+    height: 190px;
+    /*background-color: #f66960;*/
+}
+/*第一行的字体图标等*/
+/*.fotter .icon{*/
+    /*margin:0 auto;*/
+    /*width:624px;*/
+    /*height: 86px;*/
+/*}*/
+/*.fotter .icon ul{*/
+    /*width:500px;*/
+    /*height: 70px;*/
+/*}*/
+/*.fotter .icon li{*/
+    /*float:left;*/
+    /*position:relative;*/
+    /*margin: 8px;*/
+    /*height: 70px;*/
+    /*line-height:70px;*/
+    /*font-size:14px;*/
+/*}*/
+/*.fotter .icon li i{*/
+    /*font-size:20px;*/
+/*}*/
+/*.fotter .icon li span{*/
+    /*display:none;*/
+    /*position:absolute;*/
+    /*left:9px;*/
+    /*top:52px;*/
+    /*width:130px;*/
+    /*height:22px;*/
+    /*line-height:22px;*/
+    /*text-align: center;*/
+    /*color:#000;*/
+    /*border:2px solid #0086b3;*/
+    /*background-color: #fff;*/
+/*}*/
+/*.fotter .icon .mores .moresAll{*/
+    /*width:171px;*/
+    /*height:49px;*/
+/*}*/
+
+/*.fotter .icon .mores .moresAll a{*/
+    /*border: 1px solid #007aff;*/
+    /*color:#404040;*/
+    /*float:left;*/
+    /*width:83px;*/
+    /*height:23px;*/
+/*}*/
+/*.fotter .icon .mores .moresAll a i{*/
+    /*color:#007aff;*/
+/*}*/
+.navnice {
+    padding-top:64px;
+    margin-left:140px;
+    color:#fff;
+}
+.navnice .nave-top{
+    height:31px;
+    width:300px;
+}
+.navnice .nave-top a{
+    float:left;
+    width:134px;
+    height:31px;
+}
+.navnice .nave-top .wangyi{
+    width:115px;
+    background: url(../image1/fotter1.png) no-repeat;
+}
+.navnice .nave-top .borde{
+    width:2px;
+    background-color: #F10215;
+    margin: 0   12px;
+}
+.navnice .nave-top .game{
+    background: url(../image1/fotter.png) no-repeat ;
+}
+.navnice .nav-center,.navnice .nav-bottom {
+    height:22px;
+    line-height:22px;
+    font-size:12px;
+}
+.navnice .nav-center a{
+    color:#d0aa5c;
+}
+.navnice .nav-center span{
+    margin: 0 6px;
+}
+.navnice .nav-bottom span{
+    float:left;
+}
+.navnice .nav-bottom a {
+    float:left;
+    margin-left:300px;
+    width:150px;
+    height:22px;
+    text-align: center;
+    color:#fff;
+    background-color: #610000;
+}
+
+
+
+
+

@@ -1,0 +1,227 @@
+.contentLh{
+    height: 1100px;
+    width: 1349px;
+}
+/*主体内容部分*/
+.characterLh{
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    overflow: hidden;
+    background:url("../images/bgc1.jpg") no-repeat;
+}
+/*导航栏*/
+.nav{
+    width: 100%;
+    background-color:#000 opacity: 0.2;
+    border-bottom: 1px solid #909ab4;
+    height: 74px;
+}
+/*英雄介绍部分*/
+/*.hero2,.hero3,.hero4,.hero5,.hero6,.hero7,.hero8,.hero9,.hero10,.hero11,.hero12,.hero13,.hero14,.hero15,.hero16,.hero17,.hero18{*/
+     /*display: none;*/
+ /*}*/
+.contentLh .heroIntroduceLh{
+    height: 870px;
+    position: relative;
+}
+.heroImgLh{
+    /*display: none;*/
+}
+.heroImgLh img {
+    position: absolute;
+    margin-left: 160px;
+    top:0;
+}
+.heroIntroduceLh .mainContentLh{
+    width: 500px;
+    height: 830px;
+    position: absolute;
+    left: 75px;
+    top: 42px;
+}
+.mainContentLh .affectNameLh{
+    font-size:100px;
+    color: #ed9922;
+    font-weight: 700;
+    line-height: 50px;
+}
+.mainContentLh .nameLh{
+    font-size:34px;
+    color: #ed9922;
+    line-height: 34px;
+    margin-top: 25px;
+    margin-bottom: 4px;
+}
+.detailsLh h4,.detailsLh p,.skillLh,.resultLh{
+    margin-top: 15px;
+    /*display: none;*/
+}
+.mainContentLh h4 {
+    font-size: 18px;
+    line-height: 58px;
+    color: #ed9922;
+}
+.mainContentLh p{
+    width: 278px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #ffffff;
+}
+.skillLh{
+    height: 100px;
+    position: relative;
+}
+.skillLh ul {
+    position: relative;
+}
+.skillLh li {
+    float: left;
+    width: 58px;
+    width: 58px;
+    margin-right: 25px;
+}
+.skillLh li a {
+    display: block;
+    width: 58px;
+    height: 58px;
+    position: relative;
+}
+.skillLh  a img {
+    width: 58px;
+}
+.skillLh li em {
+    position: absolute;
+    background: url("../images/skill_ac_310f4f0.png") no-repeat;
+    width: 58px;
+    height: 58px;
+    top: 0;
+    left: 0;
+}
+.skillLh  em img {
+    width: 10px;
+    height: 6px;
+    position: absolute;
+    top: 91px;
+    left: 25px;
+}
+.skillLh li span {
+    display: block;
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    color: #ffffff;
+    text-align: center;
+}
+.skillLh li p{
+    display: block;
+    margin-top: 14px;
+    margin-bottom: 9px;
+    width: 371px;
+    background-color: #1d2a43;
+    padding: 5px 5px 5px 10px;
+    position: absolute;
+    top:90px;
+    left: 0px;
+}
+.mainContentLh{
+    position: relative;
+}
+.mainContentLh .resultLh {
+    position: relative;
+    top: 60px;
+}
+.mainContentLh .resultLh h5{
+    font-size: 14px;
+    color: #ed9922;
+    line-height: 36px;
+}
+.mainContentLh .resultLh span {
+    color: #ffffff;
+}
+.mainContentLh .hurt{
+    width: 217px;
+    height: 190px;
+    position: absolute;
+    top: 0px;
+    left: 215px;
+}
+.mainContentLh .hurt img{
+    width: 175px;
+}
+/*英雄头像部分*/
+.optionLh {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 280px;
+    z-index: 1;
+    background:url("../images/nav-bg_b081252.png") center 0 no-repeat ;
+}
+.optionLh .selectLh {
+    width: 1063px;
+    height: 100px;
+    position:relative ;
+    bottom: 0;
+    margin: 160px auto;
+}
+.optionLh .selectLh .btnLeftLh {
+    width: 65px;
+    height: 66px;
+    position: absolute;
+    top: 23px;
+    margin-right: 15px;
+    background:url("../images/btnLeft.png") no-repeat;
+    left: -80px;
+}
+.optionLh .selectLh .btnRightLh{
+    width: 65px;
+    height: 66px;
+    position: absolute;
+    top: 23px;
+    margin-left: 15px;
+    background:url("../images/btnRight.png") no-repeat;
+    background-position: -66px 0;
+    right: -65px;
+}
+.containerLh{
+    width:1062px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+}
+.headPhotoLh{
+    width: 2124px;
+    height: 100px;
+    position: absolute;
+    left:0;
+}
+.headPhotoLh ul{
+    width: 1062px;
+    height: 100px;
+    float: left;
+}
+.headPhotoLh ul li {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-right: 18px;
+    float: left;
+}
+.headPhotoLh  li i {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    background: url("../images/jing_7a664ca.png")  no-repeat;
+    top: 31px;
+    left: 31px;
+    display: none;
+}
+.heroPhotoLhOne{
+    display: block;
+}
+.heroPhotoLhTow{
+    display: none;
+}
+/*脚部*/
